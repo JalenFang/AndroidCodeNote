@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 
 import com.ideal.jalen.R;
+import com.ideal.jalen.animator.activity.AnimatorActivity;
 import com.ideal.jalen.entity.appstatus.AppStatusConstant;
 import com.ideal.jalen.matrix.activity.MatrixActivity;
 import com.ideal.jalen.splash.SplashActivity;
@@ -55,6 +56,10 @@ public class MainActivity extends BaseActivity {
 
     public void onClickMatrixMain(View view) {
         startActivity(MatrixActivity.class);
+    }
+
+    public void onClickAnimatorMain(View view) {
+        startActivity(AnimatorActivity.class);
     }
 
     private void startActivity(Class<?> className) {

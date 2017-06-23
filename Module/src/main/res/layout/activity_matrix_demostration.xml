@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <Button
+            style="@style/weight_button"
+            android:onClick="onClickMatrixTranslate"
+            android:text="@string/matrix_translate" />
+
+        <Button
+            style="@style/weight_button"
+            android:onClick="onClickMatrixScale"
+            android:text="@string/matrix_scale" />
+
+        <Button
+            style="@style/weight_button"
+            android:onClick="onClickMatrixRotate"
+            android:text="@string/matrix_rotate" />
+
+        <Button
+            style="@style/weight_button"
+            android:onClick="onClickMatrixSkew"
+            android:text="@string/matrix_skew" />
+    </LinearLayout>
+
+    <View
+        style="@style/common_horizontal_line_style"
+        android:layout_marginTop="150dp" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/activity_matrix_demostration_iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_style_blue"
+            android:scaleType="matrix"
+            android:src="@mipmap/pic_1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

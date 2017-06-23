@@ -18,9 +18,10 @@
             <Button
                 style="@style/main_button"
                 android:onClick="onClickMatrixMain"
-                android:text="Matrix" />
+                android:text="@string/matrix" />
 
             <Button
+                android:onClick="onClickAnimatorMain"
                 style="@style/main_button"
                 android:text="Animator" />
 

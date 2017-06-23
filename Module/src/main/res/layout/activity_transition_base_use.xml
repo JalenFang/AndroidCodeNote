@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/weight_button"
+            android:onClick="onClickTransitionBaseUseStartAnimator"
+            android:text="@string/start_animator" />
+
+        <Button
+            style="@style/weight_button"
+            android:onClick="onClickTransitionBaseUsePauseAnimator"
+            android:text="@string/pause_animator" />
+
+        <Button
+            style="@style/weight_button"
+            android:onClick="onClickTransitionBaseUseCancelAnimator"
+            android:text="@string/cancel_animator" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/activity_transition_base_use_fl_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/scene1" />
+
+    </FrameLayout>
+
+</LinearLayout>

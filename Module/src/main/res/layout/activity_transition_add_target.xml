@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/weight_button"
+            android:onClick="onClickTransitionAddTargetStartAnimator"
+            android:text="@string/start_animator" />
+
+        <Button
+            style="@style/weight_button"
+            android:onClick="onClickTransitionAddTargetPauseAnimator"
+            android:text="@string/pause_animator" />
+
+        <Button
+            style="@style/weight_button"
+            android:onClick="onClickTransitionAddTargetCancelAnimator"
+            android:text="@string/cancel_animator" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/activity_transition_add_target_fl_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/scene1" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_corner_orange"
+                android:padding="10dp"
+                android:text="@string/transition"
+                android:textColor="@color/common_style_white"
+                android:textSize="15dp" />
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_cardCornerRadius">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/activity_main_tv_transition"
+                        style="@style/cardview_textview"
+                        android:text="Transition" />
+
+                    <Button
+                        android:id="@+id/activity_main_btn_transition_base_use"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/activity_main_tv_transition"
+                        android:onClick="onClickTransitionBaseUse"
+                        android:text="@string/transition_base_use" />
+
+                    <Button
+                        android:id="@+id/activity_main_btn_transition_add_target"
+                        style="@style/cardview_button"
+                        android:layout_below="@+id/activity_main_btn_transition_base_use"
+                        android:layout_toRightOf="@+id/activity_main_tv_transition"
+                        android:onClick="onClickTransitionAddTarget"
+                        android:text="@string/transition_add_target" />
+
+                    <Button
+                        android:id="@+id/activity_main_btn_transition_delay"
+                        style="@style/cardview_button"
+                        android:layout_below="@+id/activity_main_btn_transition_add_target"
+                        android:layout_toRightOf="@+id/activity_main_tv_transition"
+                        android:onClick="onClickTransitionDelay"
+                        android:text="@string/transition_delay" />
+
+                    <Button
+                        android:id="@+id/activity_main_btn_transition_custom_color"
+                        style="@style/cardview_button"
+                        android:layout_below="@+id/activity_main_btn_transition_delay"
+                        android:layout_toRightOf="@+id/activity_main_tv_transition"
+                        android:onClick="onClickTransitionCustomColor"
+                        android:text="@string/transition_custom_color" />
+
+                    <Button
+                        android:id="@+id/activity_main_btn_transition_page_content"
+                        style="@style/cardview_button"
+                        android:layout_below="@+id/activity_main_btn_transition_custom_color"
+                        android:layout_toRightOf="@+id/activity_main_tv_transition"
+                        android:onClick="onClickTransitionPageContent"
+                        android:text="@string/transition_page_content" />
+
+                    <Button
+                        android:id="@+id/activity_main_btn_transition_share_element"
+                        style="@style/cardview_button"
+                        android:layout_below="@+id/activity_main_btn_transition_page_content"
+                        android:layout_toRightOf="@+id/activity_main_tv_transition"
+                        android:onClick="onClickTransitionShareElement"
+                        android:text="@string/transition_share_element" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

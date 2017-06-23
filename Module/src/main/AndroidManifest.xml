@@ -28,6 +28,31 @@
             android:label="@string/matrix"
             android:launchMode="standard" />
 
+        <activity
+            android:name=".matrix.activity.MatrixDemostrationActivity"
+            android:label="@string/matrix_demonstration"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".animator.activity.AnimatorActivity"
+            android:label="@string/animator"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".animator.activity.transition.TransitionBaseUseActivity"
+            android:label="@string/transition_base_use"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".animator.activity.transition.TransitionAddTargetActivity"
+            android:label="@string/transition_add_target"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".animator.activity.transition.TransitionDelayActivity"
+            android:label="@string/transition_delay"
+            android:launchMode="standard" />
+
 
     </application>
 

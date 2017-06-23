@@ -17,11 +17,13 @@
 
             <Button
                 style="@style/main_button"
-                android:text="Matrix介绍" />
+                android:onClick="onClickMatrixDemostration"
+                android:text="@string/matrix_demonstration" />
 
             <Button
                 style="@style/main_button"
-                android:text="。。。" />
+                android:text="。。。"
+                android:visibility="gone" />
 
         </LinearLayout>
 

@@ -3,10 +3,19 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <!-- 遮罩的颜色 例如ScrollView向下拉动到底显示出来的东西的颜色 -->
         <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 状态栏的颜色 -->
         <item name="colorPrimaryDark">@color/common_style_blue</item>
+        <!-- TextInputEditText选中的颜色或者CheckBox选中的颜色    -->
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowBackground">@color/common_style_gray_bg</item>
+        <!--设置Toolbar menu中item的图标颜色-->
+        <item name="android:textColorSecondary">@color/common_style_white</item>
+        <!-- 可以指定SearchView的样式 -->
+        <item name="searchViewStyle">@style/Widget.SearchView</item>
+        <!--测试自定义属性和样式使用-->
+        <item name="custom_style">@style/custom_theme_style</item>
     </style>
 
     <style name="Splash.Theme" parent="@style/AppTheme">
@@ -14,16 +23,34 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <!--ToolBar样式设置区域 ↓-->
     <style name="Toolbar.Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textColor">@color/common_style_white</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textSize">17sp</item>
     </style>
 
+    <style name="Toolbar.Subtitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/common_style_black</item>
+    </style>
+
     <style name="Toolbar.Theme" parent="@style/ThemeOverlay.AppCompat.Light">
         <item name="colorControlNormal">@color/common_style_white</item>
-        <item name="android:background">@color/common_style_blue</item>
+        <item name="android:textSize">14sp</item> <!--Toolbar 弹出的menu的字体大小-->
+        <!--<item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>-->
     </style>
+
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+
+    <!--Toolbar 弹出的menu的背景颜色-->
+    <style name="ToolBar.PopupTheme" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:colorBackground">@color/common_style_white</item>
+    </style>
+    <!--ToolBar样式设置区域 ↑-->
 
     <style name="CardView.Theme" parent="Base.CardView">
         <item name="android:foreground">?android:attr/selectableItemBackground</item>
@@ -82,5 +109,55 @@
         <item name="android:background">@color/common_style_gray_divider</item>
     </style>
 
+    <!--TabLayout样式设置区域 ↓-->
+    <style name="TabLayout.Theme" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@color/common_style_blue</item>
+        <item name="tabIndicatorColor">@color/common_style_red</item>
+        <item name="tabIndicatorHeight">@dimen/tab_indicator_height</item>
+        <item name="tabTextAppearance">@style/TabLayout.Title.Style</item>
+        <item name="tabSelectedTextColor">@color/common_style_red</item>
+    </style>
+
+    <style name="TabLayout.Title.Style" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/common_style_white</item>
+    </style>
+    <!--TabLayout样式设置区域 ↑-->
+
+    <style name="Widget.SearchView" parent="Widget.AppCompat.SearchView">
+        <!--修改搜索框提示文字-->
+        <!--<item name="defaultQueryHint">搜索本地歌曲</item>-->
+        <!--修改打开搜索框的搜索按钮的图标-->
+        <!-- <item name="searchIcon">@mipmap/m5</item>-->
+        <!--修改搜索框左边的搜索按钮图标-->
+        <item name="searchHintIcon">@null</item>
+        <!--<item name="queryBackground">@drawable/line_white</item>-->
+    </style>
+
+    <declare-styleable name="custom_attrs">
+        <attr name="color1" format="color" />
+        <attr name="color2" format="color" />
+        <attr name="color3" format="color" />
+    </declare-styleable>
+
+    <attr name="custom_style" format="reference" />
+
+    <style name="custom_theme_style">
+        <item name="color1">@color/color4</item>
+        <item name="color2">@color/color4</item>
+        <item name="color3">@color/color4</item>
+    </style>
+
+    <style name="my_style">
+        <item name="color1">@color/color2</item>
+        <item name="color2">@color/color1</item>
+        <item name="color3">@color/color1</item>
+    </style>
+
+    <style name="default_style">
+        <item name="color1">@color/color3</item>
+        <item name="color2">@color/color3</item>
+        <item name="color3">@color/color3</item>
+    </style>
 
 </resources>

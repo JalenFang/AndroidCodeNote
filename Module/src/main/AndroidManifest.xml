@@ -53,6 +53,130 @@
             android:label="@string/transition_delay"
             android:launchMode="standard" />
 
+        <activity
+            android:name=".animator.activity.transition.customcolorchange.TransitionCustomColorActivity"
+            android:label="@string/transition_custom_color"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".animator.activity.transition.pagecontent.PageContentFirstActivity"
+            android:label="@string/transition_page_content_page_first"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".animator.activity.transition.pagecontent.PageContentSecondActivity"
+            android:label="@string/transition_page_content_page_second"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".animator.activity.transition.shareelement.ShareElementFirstActivity"
+            android:label="@string/transition_share_element_page_first"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".animator.activity.transition.shareelement.ShareElementSecondActivity"
+            android:label="@string/transition_share_element_page_second"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.MaterialActivity"
+            android:label="@string/material_design"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.toolbar.ToolbarActivity"
+            android:label="@string/material_toolbar"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.snackbar.SnackbarActivity"
+            android:label="@string/material_snackbar_base_use"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.fab.FloatingActionButtonActivity"
+            android:label="@string/material_fab_base_use"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.appbar.AppBarLayoutActivity"
+            android:label="@string/material_appbar_base_use"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.dialog.BottomSheetDialogActivity"
+            android:label="@string/material_bottom_sheet_dialog_base_use"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.tab.TabLayoutTopActivity"
+            android:label="@string/material_tablayout_top"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.recyclerview.LinearVerticalActivity"
+            android:label="@string/material_recycler_linear_vertical"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.recyclerview.LinearHorizantalActivity"
+            android:label="@string/material_recycler_linear_horizantal"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.recyclerview.StaggeredActivity"
+            android:label="@string/material_recycler_staggered"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.recyclerview.GridActivity"
+            android:label="@string/material_recycler_grid"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.recyclerview_refresh_autoloadmore.RecyclerViewRefreshAutoLoadMoreActivity"
+            android:label="@string/material_recycler_header_footer"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.tab.TabLayoutBottomActivity"
+            android:label="@string/material_tablayout_bottom"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.refresh.SwipeRefreshLayoutActivity"
+            android:label="@string/material_swipe_refresh_base_use"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.drawer.DrawerLayoutSimpleActivity"
+            android:label="@string/material_drawer_base_use"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.drawer.DrawerLayoutAnimationActivity"
+            android:label="@string/material_drawer_animator"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.searchview.SearchViewToolbarActivity"
+            android:label="@string/material_search_toolbar"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.textinput.TextInputLayoutActivity"
+            android:label="@string/material_input_base_use"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".material.activity.palette.PaletteActivity"
+            android:label="@string/material_palette_base_use"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".attrsstyle.activity.AttrsStyleActivity"
+            android:label="@string/attrs_style"
+            android:launchMode="standard" />
 
     </application>
 

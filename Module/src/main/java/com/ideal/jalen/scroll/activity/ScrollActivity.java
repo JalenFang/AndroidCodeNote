@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
@@ -21,7 +22,7 @@ public class ScrollActivity extends BaseActivity {
 
     @Override
     public int getLayout() {
-        return 0;
+        return R.layout.activity_scroll;
     }
 
     @Override

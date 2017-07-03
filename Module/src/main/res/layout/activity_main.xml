@@ -21,37 +21,39 @@
                 android:text="@string/matrix" />
 
             <Button
+                style="@style/main_button"
                 android:onClick="onClickAnimatorMain"
-                style="@style/main_button"
-                android:text="Animator" />
+                android:text="@string/animator" />
 
             <Button
                 style="@style/main_button"
-                android:text="Material Design" />
+                android:onClick="onClickMaterial"
+                android:text="@string/material_design" />
 
             <Button
                 style="@style/main_button"
-                android:text="Canvas" />
+                android:text="@string/canvas" />
 
             <Button
                 style="@style/main_button"
-                android:text="Scroll" />
+                android:text="@string/scroll" />
+
+            <Button
+                android:onClick="onClickAttrsStyle"
+                style="@style/main_button"
+                android:text="@string/attrs_style" />
 
             <Button
                 style="@style/main_button"
-                android:text="AttrsStyle" />
+                android:text="@string/crop_image" />
 
             <Button
                 style="@style/main_button"
-                android:text="CropImage" />
+                android:text="@string/annotation" />
 
             <Button
                 style="@style/main_button"
-                android:text="Annotation" />
-
-            <Button
-                style="@style/main_button"
-                android:text="Bitmap" />
+                android:text="@string/bitmap" />
 
         </LinearLayout>
 

@@ -23,6 +23,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/shape_corner_orange"
+                android:elevation="@dimen/textview_elevation"
                 android:padding="10dp"
                 android:text="@string/transition"
                 android:textColor="@color/common_style_white"

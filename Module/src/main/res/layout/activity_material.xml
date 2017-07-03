@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_label_tab"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_toolbar" />
+
+                    <Button
+                        android:id="@+id/btn_tab_top"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/tv_label_tab"
+                        android:onClick="onClickToolbarBasicUse"
+                        android:text="@string/material_toolbar_base_use" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_snackbar" />
+
+                    <Button
+                        android:id="@+id/btn_tab_1"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/tv_1"
+                        android:onClick="onClickSnackbar"
+                        android:text="@string/material_snackbar_base_use" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_fab" />
+
+                    <Button
+                        android:id="@+id/btn_2"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/tv_2"
+                        android:onClick="onClickFloatingActionButton"
+                        android:text="@string/material_fab_base_use" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_appbar" />
+
+                    <Button
+                        android:id="@+id/btn_3"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/tv_3"
+                        android:onClick="onClickAppBarLayout"
+                        android:text="@string/material_appbar_base_use" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_4"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_dialog" />
+
+                    <Button
+                        android:id="@+id/btn_4"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/tv_4"
+                        android:onClick="onClickBottomSheetDialog"
+                        android:text="@string/material_bottom_sheet_dialog_base_use" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_5"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_tablayout" />
+
+                    <Button
+                        android:id="@+id/btn_5"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/tv_5"
+                        android:onClick="onClickTabLayoutTop"
+                        android:text="@string/material_tablayout_top" />
+
+                    <Button
+                        style="@style/cardview_button"
+                        android:layout_alignLeft="@id/btn_5"
+                        android:layout_below="@id/btn_5"
+                        android:layout_toRightOf="@id/tv_5"
+                        android:onClick="onClickTabLayoutBottom"
+                        android:text="@string/material_tablayout_bottom" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_6"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_recycler" />
+
+                    <Button
+                        android:id="@+id/btn_6"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/tv_6"
+                        android:onClick="onClickRecyclerViewLinearVertical"
+                        android:text="@string/material_recycler_linear_vertical" />
+
+                    <Button
+                        android:id="@+id/btn_6_Linear_Horizantal"
+                        style="@style/cardview_button"
+                        android:layout_below="@id/btn_6"
+                        android:layout_toRightOf="@+id/tv_6"
+                        android:onClick="onClickRecyclerViewLinearHorizantal"
+                        android:text="@string/material_recycler_linear_horizantal" />
+
+                    <Button
+                        android:id="@+id/btn_6_Staggered"
+                        style="@style/cardview_button"
+                        android:layout_below="@id/btn_6_Linear_Horizantal"
+                        android:layout_toRightOf="@+id/tv_6"
+                        android:onClick="onClickRecyclerViewStaggered"
+                        android:text="@string/material_recycler_staggered" />
+
+                    <Button
+                        android:id="@+id/btn_6_Grid"
+                        style="@style/cardview_button"
+                        android:layout_below="@id/btn_6_Staggered"
+                        android:layout_toRightOf="@+id/tv_6"
+                        android:onClick="onClickRecyclerViewGrid"
+                        android:text="@string/material_recycler_grid" />
+
+                    <Button
+                        android:id="@+id/btn_6_animation"
+                        style="@style/cardview_button"
+                        android:layout_below="@id/btn_6_Grid"
+                        android:layout_toRightOf="@+id/tv_6"
+                        android:onClick="onClickRecyclerViewAnimation"
+                        android:text="@string/material_recycler_animation" />
+
+                    <Button
+                        android:id="@+id/btn_6_refresh_auto_loadmore"
+                        style="@style/cardview_button"
+                        android:layout_below="@id/btn_6_animation"
+                        android:layout_toRightOf="@+id/tv_6"
+                        android:onClick="onClickRecyclerViewRefreshAutoLoadMore"
+                        android:text="@string/material_recycler_header_footer" />
+
+                    <Button
+                        android:id="@+id/btn_6_drag_swipe"
+                        style="@style/cardview_button"
+                        android:layout_below="@id/btn_6_refresh_auto_loadmore"
+                        android:layout_toRightOf="@+id/tv_6"
+                        android:onClick="onClickRecyclerViewDragSwipe"
+                        android:text="@string/material_recycler_drag_swipe" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Refresh"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_refresh" />
+
+                    <Button
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/Refresh"
+                        android:onClick="onClickSwipeRefreshLayout"
+                        android:text="@string/material_swipe_refresh_base_use" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_7"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_drawer" />
+
+                    <Button
+                        android:id="@+id/btn_7"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/tv_7"
+                        android:onClick="onClickDrawerLayoutSimple"
+                        android:text="@string/material_drawer_base_use" />
+
+                    <Button
+                        style="@style/cardview_button"
+                        android:layout_below="@id/btn_7"
+                        android:layout_toRightOf="@+id/tv_7"
+                        android:onClick="onClickDrawerLayoutAnimation"
+                        android:text="@string/material_drawer_animator" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_8"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_search" />
+
+                    <Button
+                        android:id="@+id/btn_8"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/tv_8"
+                        android:onClick="onClickSearchView"
+                        android:text="@string/material_search_base_use"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_8_"
+                        style="@style/cardview_button"
+                        android:layout_below="@+id/btn_8"
+                        android:layout_toRightOf="@+id/tv_8"
+                        android:onClick="onClickSearchViewToolbar"
+                        android:text="@string/material_search_toolbar" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_9"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_input" />
+
+                    <Button
+                        android:id="@+id/btn_9"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/tv_9"
+                        android:onClick="onClickTextInputLayout"
+                        android:text="@string/material_input_base_use" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardView.Theme"
+                app:cardBackgroundColor="@color/common_style_white"
+                app:contentPadding="@dimen/cardView_contentPadding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_10"
+                        style="@style/cardview_textview"
+                        android:text="@string/material_palette" />
+
+                    <Button
+                        android:id="@+id/btn_10"
+                        style="@style/cardview_button"
+                        android:layout_toRightOf="@+id/tv_10"
+                        android:onClick="onClickPalette"
+                        android:text="@string/material_palette_base_use" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

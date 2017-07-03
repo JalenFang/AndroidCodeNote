@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    style="@style/CardView.Theme"
+    android:clickable="true"
+    cardview:cardBackgroundColor="@color/common_style_white"
+    cardview:contentPadding="@dimen/cardView_contentPadding">
+
+    <TextView
+        android:id="@+id/item_base_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="RecyclerView Item"
+        android:textAllCaps="false" />
+
+
+</android.support.v7.widget.CardView>

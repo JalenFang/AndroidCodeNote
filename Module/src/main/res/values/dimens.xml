@@ -15,5 +15,10 @@
     <dimen name="cardView_cardElevation">5dp</dimen>
     <dimen name="cardView_contentPadding">10dp</dimen>
 
+    <dimen name="textview_elevation">5dp</dimen>
+
+    <dimen name="tab_indicator_height">3dp</dimen>
+    <dimen name="tab_layout_height">56dp</dimen>
+
 
 </resources>

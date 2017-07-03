@@ -3,6 +3,7 @@ package com.ideal.jalen.base;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.IntRange;
 import android.support.annotation.NonNull;
@@ -43,7 +44,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public abstract void initUI(@Nullable Bundle savedInstanceState);
 
     @BindView(R.id.toolbar)
-    Toolbar toolbar;
+    public Toolbar toolbar;
 
     private OnPermissionListener onPermissionListener;
     private int permissionId;
@@ -83,7 +84,11 @@ public abstract class BaseActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                finish();
+                if (Build.VERSION.SDK_INT >= 21) {
+                    finishAfterTransition();
+                } else {
+                    finish();
+                }
                 break;
             default:
                 break;

@@ -43,6 +43,81 @@
     <string name="transition_custom_color">自定义颜色改变的过渡动画</string>
     <string name="transition_page_content">页面内容的过渡动画</string>
     <string name="transition_share_element">共享元素的过渡动画</string>
+    <string name="transition_page_content_page_first">页面内容的过渡动画页面一</string>
+    <string name="transition_page_content_page_second">页面内容的过渡动画页面二</string>
+    <string name="transition_share_element_page_first">共享元素的过渡动画页面一</string>
+    <string name="transition_share_element_page_second">共享元素的过渡动画页面二</string>
     <!--Transition ↑-->
+
+    <!--Material ↓-->
+    <string name="material_toolbar">Toolbar</string>
+    <string name="material_toolbar_base_use">Toolbar的基本使用</string>
+    <string name="material_snackbar">Snackbar</string>
+    <string name="material_snackbar_base_use">Snackbar的基本使用</string>
+    <string name="material_fab">FAB</string>
+    <string name="material_fab_base_use">FloatingActionButton的基本使用</string>
+    <string name="material_appbar">AppBar</string>
+    <string name="material_appbar_base_use">AppBarLayout的使用</string>
+    <string name="material_dialog">Dialog</string>
+    <string name="material_bottom_sheet_dialog_base_use">BottomSheetDialog的基本使用</string>
+    <string name="material_tablayout">Tab</string>
+    <string name="material_tablayout_top">TabLayout顶部标签页</string>
+    <string name="material_tablayout_bottom">TabLayout底部菜单页</string>
+    <string name="material_recycler">Recycler</string>
+    <string name="material_recycler_linear_vertical">RecyclerView Linear Vertical</string>
+    <string name="material_recycler_linear_horizantal">RecyclerView Linear Horizantal</string>
+    <string name="material_recycler_staggered">RecyclerView Staggered</string>
+    <string name="material_recycler_grid">RecyclerView Grid</string>
+    <string name="material_recycler_animation">RecyclerView Animation</string>
+    <string name="material_recycler_header_footer">RecyclerView的刷新和自动加载添加头部和尾部</string>
+    <string name="material_recycler_drag_swipe">RecyclerView的拖拽，侧滑</string>
+    <string name="material_refresh">Refresh</string>
+    <string name="material_swipe_refresh_base_use">SwipeRefreshLayout的简单使用</string>
+    <string name="material_drawer">Drawer</string>
+    <string name="material_drawer_base_use">DrawerLayout的基本使用</string>
+    <string name="material_drawer_animator">DrawerLayout的title动画</string>
+    <string name="material_search">Search</string>
+    <string name="material_search_base_use">SearchView的基本使用</string>
+    <string name="material_search_toolbar">SearchView和Toolbar的使用</string>
+    <string name="material_input">Input</string>
+    <string name="material_input_base_use">TextInputLayout的基本使用</string>
+    <string name="material_palette">Palette</string>
+    <string name="material_palette_base_use">Palette的基本使用</string>
+    <!--Material ↑-->
+
+    <string name="select_scroll_flag">请选择ScrollFlag</string>
+
+    <string-array name="array_scroll_flag">
+        <item>scroll</item>
+        <item>enterAlways</item>
+        <item>enterAlwaysCollapsed</item>
+        <item>snap</item>
+        <item>exitUntilCollapsed</item>
+        <item>scroll_enterAlways</item>
+        <item>scroll_enterAlways_enterAlwaysCollapsed</item>
+        <item>scroll_exitUntilCollapsed</item>
+        <item>scroll_snap</item>
+    </string-array>
+
+    <string-array name="title">
+        <item>title1</item>
+        <item>title2</item>
+        <item>title3</item>
+    </string-array>
+
+    <string name="menu_search">查找</string>
+    <string name="menu_notifications">通知</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_about_us">关于</string>
+    <string name="item_01">Item 1</string>
+    <string name="item_02">Item 2</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string-array name="array_item">
+        <item>更新</item>
+        <item>删除</item>
+    </string-array>
 
 </resources>

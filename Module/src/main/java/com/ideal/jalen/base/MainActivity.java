@@ -8,7 +8,9 @@ import android.view.View;
 
 import com.ideal.jalen.R;
 import com.ideal.jalen.animator.activity.AnimatorActivity;
+import com.ideal.jalen.attrsstyle.activity.AttrsStyleActivity;
 import com.ideal.jalen.entity.appstatus.AppStatusConstant;
+import com.ideal.jalen.material.activity.MaterialActivity;
 import com.ideal.jalen.matrix.activity.MatrixActivity;
 import com.ideal.jalen.splash.SplashActivity;
 
@@ -60,6 +62,14 @@ public class MainActivity extends BaseActivity {
 
     public void onClickAnimatorMain(View view) {
         startActivity(AnimatorActivity.class);
+    }
+
+    public void onClickMaterial(View view) {
+        startActivity(MaterialActivity.class);
+    }
+
+    public void onClickAttrsStyle(View view) {
+        startActivity(AttrsStyleActivity.class);
     }
 
     private void startActivity(Class<?> className) {

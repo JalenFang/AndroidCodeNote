@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
+import com.ideal.jalen.utils.ScreenUtils;
 
 import butterknife.BindView;
 
@@ -53,6 +54,12 @@ public class TransitionDelayActivity extends BaseActivity {
         countDownTimer.start();
     }
 
+    @Override
+    public void collection() {
+        super.collection();
+        countDownTimer.cancel();
+    }
+
     private CountDownTimer countDownTimer = new CountDownTimer(4 * 1000, 1000) {
         @Override
         public void onTick(long millisUntilFinished) {
@@ -72,14 +79,17 @@ public class TransitionDelayActivity extends BaseActivity {
             changeBounds.setDuration(1000);
             TransitionManager.beginDelayedTransition(llRootView, changeBounds);
 
+            int sizeOne = ScreenUtils.dp2px(getActivity(), 150);
+            int sizeTwo = ScreenUtils.dp2px(getActivity(), 50);
+
             ViewGroup.LayoutParams layoutParams = viewCirculOne.getLayoutParams();
-            layoutParams.height = 400;
-            layoutParams.width = 400;
+            layoutParams.height = sizeOne;
+            layoutParams.width = sizeOne;
             viewCirculOne.setLayoutParams(layoutParams);
 
             ViewGroup.LayoutParams layoutParams2 = viewCirculTwo.getLayoutParams();
-            layoutParams2.height = 100;
-            layoutParams2.width = 100;
+            layoutParams2.height = sizeTwo;
+            layoutParams2.width = sizeTwo;
             viewCirculTwo.setLayoutParams(layoutParams2);
         }
     }

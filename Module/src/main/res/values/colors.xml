@@ -13,4 +13,10 @@
     <color name="common_style_gray_bg">#F8F9FB</color>
     <color name="common_style_gray_divider">#e8e9e9</color>
 
+    <color name="color0">#ff000000</color>
+    <color name="color1">#ff111111</color>
+    <color name="color2">#ff222222</color>
+    <color name="color3">#ff333333</color>
+    <color name="color4">#ff444444</color>
+
 </resources>

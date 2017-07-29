@@ -9,6 +9,10 @@
     <string name="crop_image">CropImage</string>
     <string name="annotation">Annotation</string>
     <string name="bitmap">Bitmap</string>
+    <string name="schedule">Schedule</string>
+    <string name="test">测试</string>
+    <string name="test1">测试页面一</string>
+    <string name="test2">测试页面二</string>
 
     <!--权限 ↓-->
     <string name="permission_read_phone_state_refuse">您还没有打开本应用在手机设置中的读取设备信息权限，请先打开相应权限！</string>

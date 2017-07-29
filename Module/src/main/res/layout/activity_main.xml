@@ -39,8 +39,8 @@
                 android:text="@string/scroll" />
 
             <Button
-                android:onClick="onClickAttrsStyle"
                 style="@style/main_button"
+                android:onClick="onClickAttrsStyle"
                 android:text="@string/attrs_style" />
 
             <Button
@@ -54,6 +54,11 @@
             <Button
                 style="@style/main_button"
                 android:text="@string/bitmap" />
+
+            <Button
+                style="@style/main_button"
+                android:onClick="onClickTest"
+                android:text="@string/test" />
 
         </LinearLayout>
 

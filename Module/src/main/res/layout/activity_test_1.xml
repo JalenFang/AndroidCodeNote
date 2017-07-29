@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/common_style_white"
+        android:gravity="center"
+        android:text="测试页面1"
+        android:textColor="@color/common_style_black" />
+
+    <ProgressBar
+        android:id="@+id/activity_test_1_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/common_style_blue"
+        android:progressDrawable="@drawable/progressbar"
+        android:max="100"
+        android:progress="0" />
+
+
+</LinearLayout>

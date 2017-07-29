@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_schedule_recycler_view_ll_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_style_white"
+        android:minHeight="@dimen/xxxdpi_280px"
+        android:orientation="vertical">
+
+        <com.ideal.jalen.schedule.widget.ScheduleDateView
+            android:id="@+id/item_schedule_recycler_view_scheduleDateView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xxxdpi_92px"
+            android:layout_marginTop="@dimen/xxxdpi_14px" />
+
+        <com.ideal.jalen.schedule.widget.ScheduleItemContentView
+            android:id="@+id/item_schedule_recycler_view_scheduleItemContentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

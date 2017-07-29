@@ -13,6 +13,13 @@
     <color name="common_style_gray_bg">#F8F9FB</color>
     <color name="common_style_gray_divider">#e8e9e9</color>
 
+    <color name="common_style_gray_hint_3">#333333</color><!--主要用于辅助、次要的文字信息等-->
+    <color name="common_style_gray_hint_6">#666666</color><!--主要用于辅助、次要的文字信息等-->
+    <color name="common_style_gray_hint_9">#999999</color><!--主要用于辅助、次要的文字信息等-->
+    <color name="common_style_gray_divider2">#b3bcbcbf</color><!--主要标题，底部分割线-->
+
+    <color name="schedule_selcect">#EEEEEE</color>
+
     <color name="color0">#ff000000</color>
     <color name="color1">#ff111111</color>
     <color name="color2">#ff222222</color>

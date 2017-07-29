@@ -13,6 +13,7 @@ import com.ideal.jalen.entity.appstatus.AppStatusConstant;
 import com.ideal.jalen.material.activity.MaterialActivity;
 import com.ideal.jalen.matrix.activity.MatrixActivity;
 import com.ideal.jalen.splash.SplashActivity;
+import com.ideal.jalen.test.Test1Acitivity;
 
 /**
  * @author Jalen
@@ -70,6 +71,10 @@ public class MainActivity extends BaseActivity {
 
     public void onClickAttrsStyle(View view) {
         startActivity(AttrsStyleActivity.class);
+    }
+
+    public void onClickTest(View view) {
+        startActivity(Test1Acitivity.class);
     }
 
     private void startActivity(Class<?> className) {

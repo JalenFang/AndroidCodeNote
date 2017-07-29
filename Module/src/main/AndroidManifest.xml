@@ -178,6 +178,17 @@
             android:label="@string/attrs_style"
             android:launchMode="standard" />
 
+
+        <activity
+            android:name=".test.Test1Acitivity"
+            android:label="@string/test1"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".test.Test2Acitivity"
+            android:label="@string/test2"
+            android:launchMode="standard" />
+
     </application>
 
 </manifest>

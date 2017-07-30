@@ -56,6 +56,11 @@
                 android:text="@string/bitmap" />
 
             <Button
+                android:onClick="onClickProgressBar"
+                style="@style/main_button"
+                android:text="@string/progress_bar" />
+
+            <Button
                 style="@style/main_button"
                 android:onClick="onClickTest"
                 android:text="@string/test" />

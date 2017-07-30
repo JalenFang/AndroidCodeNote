@@ -9,6 +9,7 @@
     <string name="crop_image">CropImage</string>
     <string name="annotation">Annotation</string>
     <string name="bitmap">Bitmap</string>
+    <string name="progress_bar">ProgressBar</string>
     <string name="schedule">Schedule</string>
     <string name="test">测试</string>
     <string name="test1">测试页面一</string>
@@ -123,5 +124,9 @@
         <item>更新</item>
         <item>删除</item>
     </string-array>
+
+    <!--ProgressBar ↓-->
+    <string name="progressbar_horizontal">水平进度条</string>
+    <!--ProgressBar ↑-->
 
 </resources>

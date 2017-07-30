@@ -178,6 +178,15 @@
             android:label="@string/attrs_style"
             android:launchMode="standard" />
 
+        <activity
+            android:name=".progress.activity.ProgressBarActivity"
+            android:label="@string/progress_bar"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".progress.activity.ProgressBarHorizontalActivity"
+            android:label="@string/progressbar_horizontal"
+            android:launchMode="standard" />
 
         <activity
             android:name=".test.Test1Acitivity"

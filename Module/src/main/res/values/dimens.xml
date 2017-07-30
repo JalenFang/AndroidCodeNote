@@ -20,6 +20,8 @@
     <dimen name="tab_indicator_height">3dp</dimen>
     <dimen name="tab_layout_height">56dp</dimen>
 
+    <dimen name="space">15dp</dimen>
+
     <dimen name="xxxdpi_3px">0.85dp</dimen>
     <dimen name="xxxdpi_14px">4dp</dimen>
     <dimen name="xxxdpi_36px">10dp</dimen>
@@ -29,7 +31,6 @@
     <dimen name="xxxdpi_280px">80dp</dimen>
     <dimen name="xxxdpi_300px">85.7dp</dimen>
     <dimen name="xxxdpi_360px">102.86dp</dimen>
-
 
 
 </resources>

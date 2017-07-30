@@ -111,6 +111,12 @@
         <item name="android:background">@color/common_style_gray_divider</item>
     </style>
 
+    <!--通用的间距Style -->
+    <style name="space_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space</item>
+    </style>
+
     <!--TabLayout样式设置区域 ↓-->
     <style name="TabLayout.Theme" parent="Widget.Design.TabLayout">
         <item name="tabBackground">@color/common_style_blue</item>
@@ -170,7 +176,6 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">17sp</item>
     </style>
-
 
 
 </resources>

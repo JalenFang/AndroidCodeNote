@@ -25,7 +25,6 @@ import com.ideal.jalen.permission.PermissionUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -43,7 +42,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     public abstract void initUI(@Nullable Bundle savedInstanceState);
 
-    @BindView(R.id.toolbar)
+    //    @BindView(R.id.toolbar)
     public Toolbar toolbar;
 
     private OnPermissionListener onPermissionListener;
@@ -61,9 +60,12 @@ public abstract class BaseActivity extends AppCompatActivity {
                 setContentView(getLayout());
                 ButterKnife.bind(getActivity());
 
-                setSupportActionBar(toolbar);
-                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                toolbar = (Toolbar) findViewById(R.id.toolbar);
 
+                if (toolbar != null) {
+                    setSupportActionBar(toolbar);
+                    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                }
 
                 initUI(savedInstanceState);
                 break;

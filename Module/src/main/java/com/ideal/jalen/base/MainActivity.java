@@ -12,9 +12,11 @@ import com.ideal.jalen.attrsstyle.activity.AttrsStyleActivity;
 import com.ideal.jalen.entity.appstatus.AppStatusConstant;
 import com.ideal.jalen.material.activity.MaterialActivity;
 import com.ideal.jalen.matrix.activity.MatrixActivity;
+import com.ideal.jalen.myactivity.MyActivity;
 import com.ideal.jalen.progress.activity.ProgressBarActivity;
 import com.ideal.jalen.splash.SplashActivity;
 import com.ideal.jalen.test.Test1Acitivity;
+import com.ideal.jalen.view.activity.ViewActivity;
 
 /**
  * @author Jalen
@@ -76,6 +78,14 @@ public class MainActivity extends BaseActivity {
 
     public void onClickProgressBar(View view) {
         startActivity(ProgressBarActivity.class);
+    }
+
+    public void onClickActivity(View view) {
+        startActivity(MyActivity.class);
+    }
+
+    public void onClickView(View view) {
+        startActivity(ViewActivity.class);
     }
 
     public void onClickTest(View view) {

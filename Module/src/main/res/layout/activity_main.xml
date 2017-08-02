@@ -61,6 +61,16 @@
                 android:text="@string/progress_bar" />
 
             <Button
+                android:onClick="onClickActivity"
+                style="@style/main_button"
+                android:text="@string/activity" />
+
+            <Button
+                android:onClick="onClickView"
+                style="@style/main_button"
+                android:text="@string/view" />
+
+            <Button
                 style="@style/main_button"
                 android:onClick="onClickTest"
                 android:text="@string/test" />

@@ -177,5 +177,19 @@
         <item name="android:textSize">17sp</item>
     </style>
 
+    <style name="Theme.Translate" parent="@style/AppTheme">
+        <item name="android:windowBackground">@color/common_style_translate</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--<item name="android:windowAnimationStyle">@style/Translate.Activity.Animation</item>-->
+
+    <!--Animation ↓-->
+    <style name="Translate.Activity.Animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:windowExitAnimation">@anim/base_slide_right_out</item>
+    </style>
+
 
 </resources>

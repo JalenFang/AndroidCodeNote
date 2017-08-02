@@ -10,6 +10,8 @@
     <string name="annotation">Annotation</string>
     <string name="bitmap">Bitmap</string>
     <string name="progress_bar">ProgressBar</string>
+    <string name="activity">Activity</string>
+    <string name="view">View</string>
     <string name="schedule">Schedule</string>
     <string name="test">测试</string>
     <string name="test1">测试页面一</string>
@@ -128,5 +130,13 @@
     <!--ProgressBar ↓-->
     <string name="progressbar_horizontal">水平进度条</string>
     <!--ProgressBar ↑-->
+
+    <!--Activity ↓-->
+    <string name="activity_translate">透明Activity</string>
+    <!--Activity ↑-->
+
+    <!--View ↓-->
+    <string name="view_text_view">TextView</string>
+    <!--View ↑-->
 
 </resources>

@@ -12,6 +12,7 @@
     <color name="common_style_green">#00ca43</color>
     <color name="common_style_gray_bg">#F8F9FB</color>
     <color name="common_style_gray_divider">#e8e9e9</color>
+    <color name="common_style_translate">#80000000</color>
 
     <color name="common_style_gray_hint_3">#333333</color><!--主要用于辅助、次要的文字信息等-->
     <color name="common_style_gray_hint_6">#666666</color><!--主要用于辅助、次要的文字信息等-->

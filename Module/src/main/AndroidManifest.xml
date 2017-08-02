@@ -189,6 +189,26 @@
             android:launchMode="standard" />
 
         <activity
+            android:name=".myactivity.MyActivity"
+            android:label="@string/activity"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".myactivity.TranslateActivity"
+            android:launchMode="standard"
+            android:theme="@style/Theme.Translate" />
+
+        <activity
+            android:name=".view.activity.ViewActivity"
+            android:label="@string/view"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".view.activity.TextViewActivity"
+            android:label="@string/view_text_view"
+            android:launchMode="standard" />
+
+        <activity
             android:name=".test.Test1Acitivity"
             android:label="@string/test1"
             android:launchMode="standard" />

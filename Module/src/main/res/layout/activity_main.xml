@@ -32,6 +32,7 @@
 
             <Button
                 style="@style/main_button"
+                android:onClick="onClickCanvas"
                 android:text="@string/canvas" />
 
             <Button
@@ -56,18 +57,18 @@
                 android:text="@string/bitmap" />
 
             <Button
-                android:onClick="onClickProgressBar"
                 style="@style/main_button"
+                android:onClick="onClickProgressBar"
                 android:text="@string/progress_bar" />
 
             <Button
-                android:onClick="onClickActivity"
                 style="@style/main_button"
+                android:onClick="onClickActivity"
                 android:text="@string/activity" />
 
             <Button
-                android:onClick="onClickView"
                 style="@style/main_button"
+                android:onClick="onClickView"
                 android:text="@string/view" />
 
             <Button

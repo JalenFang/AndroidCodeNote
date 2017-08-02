@@ -1,22 +1,18 @@
 package com.ideal.jalen.canvas.activity;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.view.View;
 
 import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
  * @author Jalen
- * @date 2016/12/6 21:46
- * @editor
- * @date
- * @describe
+ * @date 2016/12/14
+ * @describe 贝塞尔曲线
  */
-public class CanvasActivity extends BaseActivity {
+public class BezierActivity extends BaseActivity {
     @Override
     public Activity getActivity() {
         return this;
@@ -24,19 +20,11 @@ public class CanvasActivity extends BaseActivity {
 
     @Override
     public int getLayout() {
-        return R.layout.activity_canvas;
+        return R.layout.activity_bezier;
     }
 
     @Override
     public void initUI(@Nullable Bundle savedInstanceState) {
 
-    }
-
-    public void onClickBezier(View view) {
-        startActivity(BezierActivity.class);
-    }
-
-    private void startActivity(Class<?> className) {
-        startActivity(new Intent(getActivity(), className));
     }
 }

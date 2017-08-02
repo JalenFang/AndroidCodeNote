@@ -173,6 +173,17 @@
             android:label="@string/material_palette_base_use"
             android:launchMode="standard" />
 
+
+        <activity
+            android:name=".canvas.activity.CanvasActivity"
+            android:label="@string/canvas"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".canvas.activity.BezierActivity"
+            android:label="@string/canvas_bezier"
+            android:launchMode="standard" />
+
         <activity
             android:name=".attrsstyle.activity.AttrsStyleActivity"
             android:label="@string/attrs_style"

@@ -139,4 +139,8 @@
     <string name="view_text_view">TextView</string>
     <!--View ↑-->
 
+    <!--Canvas ↓-->
+    <string name="canvas_bezier">贝塞尔曲线</string>
+    <!--Canvas ↑-->
+
 </resources>

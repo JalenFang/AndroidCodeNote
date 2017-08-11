@@ -180,6 +180,11 @@
             android:launchMode="standard" />
 
         <activity
+            android:name=".canvas.activity.CanvasBaseOperationActivity"
+            android:label="@string/canvas_base_operation"
+            android:launchMode="standard" />
+
+        <activity
             android:name=".canvas.activity.BezierActivity"
             android:label="@string/canvas_bezier"
             android:launchMode="standard" />

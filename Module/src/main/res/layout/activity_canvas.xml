@@ -8,6 +8,11 @@
 
     <Button
         style="@style/main_button"
+        android:onClick="onClickBaseOperation"
+        android:text="@string/canvas_base_operation" />
+
+    <Button
+        style="@style/main_button"
         android:onClick="onClickBezier"
         android:text="@string/canvas_bezier" />
 

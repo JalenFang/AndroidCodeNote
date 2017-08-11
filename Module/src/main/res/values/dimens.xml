@@ -32,5 +32,7 @@
     <dimen name="xxxdpi_300px">85.7dp</dimen>
     <dimen name="xxxdpi_360px">102.86dp</dimen>
 
+    <dimen name="canvas_view_height">200dp</dimen>
+    <dimen name="text_desc_margin_size">20dp</dimen>
 
 </resources>

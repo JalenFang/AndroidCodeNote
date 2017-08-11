@@ -140,6 +140,13 @@
     <!--View ↑-->
 
     <!--Canvas ↓-->
+    <string name="canvas_base_operation">基本操作</string>
+    <string name="canvas_rect">矩形</string>
+    <string name="canvas_rount_rect">圆角矩形</string>
+    <string name="canvas_point">点</string>
+    <string name="canvas_line">线</string>
+    <string name="canvas_circle">圆</string>
+    <string name="canvas_text">文字</string>
     <string name="canvas_bezier">贝塞尔曲线</string>
     <!--Canvas ↑-->
 

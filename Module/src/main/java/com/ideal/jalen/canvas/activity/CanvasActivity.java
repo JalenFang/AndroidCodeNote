@@ -36,6 +36,10 @@ public class CanvasActivity extends BaseActivity {
         startActivity(BezierActivity.class);
     }
 
+    public void onClickBaseOperation(View view) {
+        startActivity(CanvasBaseOperationActivity.class);
+    }
+
     private void startActivity(Class<?> className) {
         startActivity(new Intent(getActivity(), className));
     }

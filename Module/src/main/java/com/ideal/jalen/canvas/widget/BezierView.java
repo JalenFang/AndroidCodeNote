@@ -25,6 +25,7 @@ public class BezierView extends View {
     private PointF endPoint;
     private PointF assistPoint;// 辅助点
     private Path path;
+    private Paint pointPaint;
 
     public BezierView(Context context) {
         this(context, null);
@@ -51,8 +52,13 @@ public class BezierView extends View {
         paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setColor(ContextCompat.getColor(getContext(), R.color.common_style_blue));
         paint.setStrokeWidth(ScreenUtils.dp2px(getContext(), 5));
-        paint.setStyle(Paint.Style.FILL);
+        paint.setStyle(Paint.Style.STROKE);
         paint.setDither(true);
+
+        pointPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        pointPaint.setStrokeWidth(ScreenUtils.dp2px(getContext(), 5));
+        pointPaint.setStyle(Paint.Style.FILL);
+        pointPaint.setColor(ContextCompat.getColor(getContext(), R.color.common_style_red));
     }
 
     @Override
@@ -68,7 +74,11 @@ public class BezierView extends View {
         // 画路径
         canvas.drawPath(path, paint);
         // 画辅助点
-        canvas.drawPoint(assistPoint.x, assistPoint.y, paint);
+        canvas.drawPoint(assistPoint.x, assistPoint.y, pointPaint);
+        //画起点
+        canvas.drawPoint(startPoint.x, startPoint.y, pointPaint);
+        //画终点
+        canvas.drawPoint(endPoint.x, endPoint.y, pointPaint);
     }
 
     @Override

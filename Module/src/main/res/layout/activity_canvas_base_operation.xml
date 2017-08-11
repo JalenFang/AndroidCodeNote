@@ -113,6 +113,37 @@
 
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/activity_canvas_base_operation_oval"
+                    style="@style/desc_textview_style"
+                    android:text="@string/canvas_oval" />
+
+                <com.ideal.jalen.canvas.widget.OvalView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/canvas_view_height"
+                    android:layout_toRightOf="@id/activity_canvas_base_operation_oval" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/activity_canvas_base_operation_arc"
+                    style="@style/desc_textview_style"
+                    android:text="@string/canvas_arc" />
+
+                <com.ideal.jalen.canvas.widget.ArcView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/canvas_view_height"
+                    android:layout_toRightOf="@id/activity_canvas_base_operation_arc" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 

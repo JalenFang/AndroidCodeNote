@@ -2,7 +2,6 @@ package com.ideal.jalen.canvas.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.support.v4.content.ContextCompat;
@@ -15,10 +14,11 @@ import com.ideal.jalen.utils.ScreenUtils;
 /**
  * @author Jalen
  * @date 2016/12/15 22:01
- * @describe  椭圆
+ * @describe 椭圆
  */
 public class OvalView extends View {
     private Paint paint;
+    private Paint rectPaint;
 
     public OvalView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -37,27 +37,32 @@ public class OvalView extends View {
             paint.setStyle(Paint.Style.FILL);
             paint.setStrokeWidth(ScreenUtils.dp2px(getContext(), 3));
         }
+
+        if (rectPaint == null) {
+            rectPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+            rectPaint.setColor(ContextCompat.getColor(getContext(), R.color.common_style_blue));
+            rectPaint.setStyle(Paint.Style.STROKE);
+            rectPaint.setStrokeWidth(ScreenUtils.dp2px(getContext(), 3));
+        }
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         drawOval(canvas);
-        drawRect(canvas);
+        drawOval1(canvas);
     }
 
-    private void drawRect(Canvas canvas) {
-        RectF rect = new RectF(100, 200, 300, 400);
-        Paint paint = new Paint();
-        paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeWidth(10);
-        paint.setColor(Color.BLUE);
-        canvas.drawRect(rect, paint);
+    //椭圆是矩形的内切圆
+    private void drawOval1(Canvas canvas) {
+        RectF rectF = new RectF(150, 50, 300, 100);
+        canvas.drawRect(rectF, rectPaint);
+        canvas.drawOval(rectF, paint);
     }
 
     private void drawOval(Canvas canvas) {
-        RectF rect = new RectF(100, 200, 300, 400);
+        RectF rect = new RectF(0, 0, 100, 100);
+        canvas.drawRect(rect, rectPaint);
         canvas.drawOval(rect, paint);
-        //canvas.drawOval(100f, 100f, 200f, 200f, paint);
     }
 }

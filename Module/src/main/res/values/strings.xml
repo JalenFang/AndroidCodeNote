@@ -147,6 +147,8 @@
     <string name="canvas_line">线</string>
     <string name="canvas_circle">圆</string>
     <string name="canvas_text">文字</string>
+    <string name="canvas_oval">椭圆</string>
+    <string name="canvas_arc">圆弧</string>
     <string name="canvas_bezier">贝塞尔曲线</string>
     <!--Canvas ↑-->
 

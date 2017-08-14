@@ -35,7 +35,7 @@ public class MatrixActivity extends BaseActivity {
 
     @Override
     public void initUI(@Nullable Bundle savedInstanceState) {
-        // matrix.setValues();
+        // matrixTranslate.setValues();
         matrix.getValues(valueArray);
 
         Log.i("dragon", "MSCALE_X = " + valueArray[Matrix.MSCALE_X] + "\n");

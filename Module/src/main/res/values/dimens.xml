@@ -35,4 +35,6 @@
     <dimen name="canvas_view_height">200dp</dimen>
     <dimen name="text_desc_margin_size">20dp</dimen>
 
+    <dimen name="matrix_image_view_dimen">150dp</dimen>
+
 </resources>

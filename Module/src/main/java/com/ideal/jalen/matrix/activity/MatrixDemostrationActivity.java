@@ -26,10 +26,21 @@ public class MatrixDemostrationActivity extends BaseActivity {
 
     @BindView(R.id.activity_matrix_demostration_iv_pic)
     ImageView ivPic;
+    @BindView(R.id.activity_matrix_demostration_iv_pic_Scale)
+    ImageView ivPicScale;
+    @BindView(R.id.activity_matrix_demostration_iv_pic_Rotate)
+    ImageView ivPicRotate;
+    @BindView(R.id.activity_matrix_demostration_iv_pic_skew)
+    ImageView ivPicSkew;
 
-    Matrix matrix = new Matrix();
+    Matrix matrixTranslate;
+    Matrix matrixScale;
+    Matrix matrixRotate;
+    Matrix matrixSkew;
 
     private int picHeight, picWidth;
+    private int width;
+    private int height;
 
     @Override
     public Activity getActivity() {
@@ -43,6 +54,10 @@ public class MatrixDemostrationActivity extends BaseActivity {
 
     @Override
     public void initUI(@Nullable Bundle savedInstanceState) {
+        matrixTranslate = new Matrix();
+        matrixScale = new Matrix();
+        matrixRotate = new Matrix();
+        matrixSkew = new Matrix();
         //ivPic.setScaleType(ImageView.ScaleType.MATRIX);
         ivPic.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
@@ -56,8 +71,21 @@ public class MatrixDemostrationActivity extends BaseActivity {
                     return;
                 }
 
+                width = ivPic.getWidth();
+                height = ivPic.getHeight();
+
                 picWidth = drawable.getIntrinsicWidth();
                 picHeight = drawable.getIntrinsicHeight();
+
+                matrixTranslate.setTranslate(width / 2 - picWidth / 2, height / 2 - picHeight / 2);
+                matrixScale.setTranslate(width / 2 - picWidth / 2, height / 2 - picHeight / 2);
+                matrixRotate.setTranslate(width / 2 - picWidth / 2, height / 2 - picHeight / 2);
+                matrixSkew.setTranslate(width / 2 - picWidth / 2, height / 2 - picHeight / 2);
+
+                ivPic.setImageMatrix(matrixTranslate);
+                ivPicScale.setImageMatrix(matrixScale);
+                ivPicRotate.setImageMatrix(matrixRotate);
+                ivPicSkew.setImageMatrix(matrixSkew);
             }
         });
     }
@@ -74,26 +102,27 @@ public class MatrixDemostrationActivity extends BaseActivity {
      */
 
     public void onClickMatrixTranslate(View view) {
-        matrix.setTranslate(100, 100);
-//        matrix.postTranslate(0, 300);
-//        matrix.setTranslate(0, 300);
-        ivPic.setImageMatrix(matrix);
+        matrixTranslate.postTranslate(30, 0);
+//        matrixTranslate.postTranslate(0, 300);
+//        matrixTranslate.setTranslate(0, 300);
+        ivPic.setImageMatrix(matrixTranslate);
     }
 
+    //缩放的初始值为1 必须改变这个大小 否则无效
     public void onClickMatrixScale(View view) {
-        matrix.setScale(0.5f, 0.5f, picWidth / 2, picWidth / 2);
-        //matrix.setScale(1f, 2f);
-        ivPic.setImageMatrix(matrix);
+        matrixScale.postScale(1.1f, 1.1f, width / 2, height / 2);
+        //matrixTranslate.setScale(1f, 2f);
+        ivPicScale.setImageMatrix(matrixScale);
     }
 
     public void onClickMatrixRotate(View view) {
-        matrix.setRotate(180, picWidth / 2, picHeight / 2);
-        ivPic.setImageMatrix(matrix);
+        matrixRotate.postRotate(60, width / 2, height / 2);
+        ivPicRotate.setImageMatrix(matrixRotate);
     }
 
     public void onClickMatrixSkew(View view) {
-        //matrix.setSkew(1f, 2f);
-        matrix.setSkew(1f, 2f, picWidth / 2, picHeight / 2);
-        ivPic.setImageMatrix(matrix);
+        //matrixTranslate.setSkew(1f, 2f);
+        matrixTranslate.postSkew(1f, 2f, width / 2, height / 2);
+        ivPicSkew.setImageMatrix(matrixTranslate);
     }
 }

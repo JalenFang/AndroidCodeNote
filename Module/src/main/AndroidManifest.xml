@@ -185,8 +185,18 @@
             android:launchMode="standard" />
 
         <activity
-            android:name=".canvas.activity.BezierActivity"
+            android:name=".canvas.activity.bezier.BezierActivity"
             android:label="@string/canvas_bezier"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".canvas.activity.bezier.TwoOrderBezierBaseOperationActivity"
+            android:label="@string/canvas_two_order_bezier"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".canvas.activity.bezier.DrawBoardActivity"
+            android:label="@string/canvas_drawing_board"
             android:launchMode="standard" />
 
         <activity
@@ -233,6 +243,7 @@
             android:name=".test.Test2Acitivity"
             android:label="@string/test2"
             android:launchMode="standard" />
+
 
     </application>
 

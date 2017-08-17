@@ -18,7 +18,7 @@ import com.ideal.jalen.utils.ScreenUtils;
  * @date 2016/12/14
  * @describe 贝塞尔曲线
  */
-public class BezierView extends View {
+public class TwoOrderBezierView extends View {
 
     private Paint paint;
     private PointF startPoint;
@@ -27,11 +27,11 @@ public class BezierView extends View {
     private Path path;
     private Paint pointPaint;
 
-    public BezierView(Context context) {
+    public TwoOrderBezierView(Context context) {
         this(context, null);
     }
 
-    public BezierView(Context context, AttributeSet attrs) {
+    public TwoOrderBezierView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }

@@ -8,16 +8,12 @@
 
     <Button
         style="@style/main_button"
-        android:onClick="onClickTwoOrderBezier"
-        android:text="@string/canvas_two_order_bezier" />
+        android:onClick="onClickBaseOperation"
+        android:text="@string/base_operation" />
 
     <Button
         style="@style/main_button"
-        android:onClick="onClickThreeOrderBezier"
-        android:text="@string/canvas_three_order_bezier" />
-
-    <com.ideal.jalen.canvas.widget.TwoOrderBezierView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:onClick="onClickDrawingBoard"
+        android:text="@string/canvas_drawing_board" />
 
 </LinearLayout>

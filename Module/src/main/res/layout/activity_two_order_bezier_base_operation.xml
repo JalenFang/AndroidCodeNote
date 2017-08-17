@@ -6,16 +6,6 @@
 
     <include layout="@layout/toolbar" />
 
-    <Button
-        style="@style/main_button"
-        android:onClick="onClickTwoOrderBezier"
-        android:text="@string/canvas_two_order_bezier" />
-
-    <Button
-        style="@style/main_button"
-        android:onClick="onClickThreeOrderBezier"
-        android:text="@string/canvas_three_order_bezier" />
-
     <com.ideal.jalen.canvas.widget.TwoOrderBezierView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

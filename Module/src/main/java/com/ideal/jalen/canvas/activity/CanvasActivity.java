@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
+import com.ideal.jalen.canvas.activity.bezier.BezierActivity;
 
 /**
  * @author Jalen

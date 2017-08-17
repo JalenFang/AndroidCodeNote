@@ -17,6 +17,11 @@
     <string name="test1">测试页面一</string>
     <string name="test2">测试页面二</string>
 
+    <!--通用 ↓-->
+    <string name="base_operation">基本操作</string>
+    <!--通用 ↑-->
+
+
     <!--权限 ↓-->
     <string name="permission_read_phone_state_refuse">您还没有打开本应用在手机设置中的读取设备信息权限，请先打开相应权限！</string>
     <string name="permission_call_phone_refuse">您还没有打开本应用在手机设置中的打电话权限，请先打开相应权限！</string>
@@ -150,6 +155,9 @@
     <string name="canvas_oval">椭圆</string>
     <string name="canvas_arc">圆弧</string>
     <string name="canvas_bezier">贝塞尔曲线</string>
+    <string name="canvas_two_order_bezier">二阶贝塞尔曲线</string>
+    <string name="canvas_three_order_bezier">三阶塞尔曲线</string>
+    <string name="canvas_drawing_board">画板</string>
     <!--Canvas ↑-->
 
 </resources>

@@ -191,6 +191,11 @@
 
         <activity
             android:name=".canvas.activity.bezier.TwoOrderBezierBaseOperationActivity"
+            android:label="@string/canvas_two_order_bezier_base_operation"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".canvas.activity.bezier.TwoOrderBezierActivity"
             android:label="@string/canvas_two_order_bezier"
             android:launchMode="standard" />
 

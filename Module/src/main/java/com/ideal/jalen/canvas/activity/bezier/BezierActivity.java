@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
+import com.ideal.jalen.utils.StartUtil;
 
 /**
  * @author Jalen
@@ -30,7 +31,7 @@ public class BezierActivity extends BaseActivity {
     }
 
     public void onClickTwoOrderBezier(View view) {
-
+        StartUtil.startActivity(getActivity(), TwoOrderBezierActivity.class);
     }
 
     public void onClickThreeOrderBezier(View view) {

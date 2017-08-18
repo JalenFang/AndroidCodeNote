@@ -6,5 +6,9 @@
 
     <include layout="@layout/toolbar" />
 
+    <com.ideal.jalen.canvas.widget.DrawBoardView
+        android:id="@+id/activity_draw_board_drawBoardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

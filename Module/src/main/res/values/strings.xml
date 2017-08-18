@@ -19,6 +19,8 @@
 
     <!--通用 ↓-->
     <string name="base_operation">基本操作</string>
+    <string name="reset">重置</string>
+    <string name="color">颜色</string>
     <!--通用 ↑-->
 
 
@@ -156,6 +158,7 @@
     <string name="canvas_arc">圆弧</string>
     <string name="canvas_bezier">贝塞尔曲线</string>
     <string name="canvas_two_order_bezier">二阶贝塞尔曲线</string>
+    <string name="canvas_two_order_bezier_base_operation">二阶贝塞尔曲线基本使用</string>
     <string name="canvas_three_order_bezier">三阶塞尔曲线</string>
     <string name="canvas_drawing_board">画板</string>
     <!--Canvas ↑-->

@@ -6,11 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * @author Dragon
- * @date 2016/11/11 14:07
- * @editor
- * @date
- * @describe 通用的viewpager适配器
+ * author: Jalen
+ * date: 2016/11/11 14:07
+ * describe: 通用的viewpager适配器
  */
 public class CommonViewPagerAdapter<v extends View> extends PagerAdapter {
     public v[] views;
@@ -30,7 +28,7 @@ public class CommonViewPagerAdapter<v extends View> extends PagerAdapter {
         this.views = views;
     }
 
-    public  v[] getViews(){
+    public v[] getViews() {
         return views;
     }
 

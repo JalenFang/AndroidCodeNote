@@ -14,17 +14,15 @@ import com.ideal.jalen.constant.AnimatorConstant;
 
 
 /**
- * @author Dragon
- * @date 2017/6/20. 9:40
- * @editor
- * @date
- * @describe 页面内容过渡动画
+ * author: Dragon
+ * date: 2017/6/20. 9:40
+ * describe: 页面内容过渡动画
  */
 public class PageContentSecondActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        setTransiton();
+        setTransition();
         super.onCreate(savedInstanceState);
     }
 
@@ -43,7 +41,7 @@ public class PageContentSecondActivity extends BaseActivity {
 
     }
 
-    private void setTransiton() {
+    private void setTransition() {
         if (Build.VERSION.SDK_INT >= 21) {
             getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
 
@@ -56,7 +54,7 @@ public class PageContentSecondActivity extends BaseActivity {
 
             Slide slide1 = new Slide();
             slide1.setDuration(AnimatorConstant.DURATION_TIME);
-            slide1.setSlideEdge(Gravity.RIGHT);
+            slide1.setSlideEdge(Gravity.END);
             getWindow().setReturnTransition(slide1);
 
 

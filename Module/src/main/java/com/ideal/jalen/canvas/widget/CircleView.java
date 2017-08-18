@@ -12,9 +12,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.utils.ScreenUtils;
 
 /**
- * @author Jalen
- * @date 2016/12/15 21:32
- * @describe 圆
+ * author: Jalen
+ * date: 2016/12/15 21:32
+ * describe: 圆
  */
 public class CircleView extends View {
     private Paint paint;

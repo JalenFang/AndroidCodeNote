@@ -18,7 +18,7 @@ import com.ideal.jalen.material.activity.drawer.DrawerLayoutSimpleActivity;
 import com.ideal.jalen.material.activity.fab.FloatingActionButtonActivity;
 import com.ideal.jalen.material.activity.palette.PaletteActivity;
 import com.ideal.jalen.material.activity.recyclerview.GridActivity;
-import com.ideal.jalen.material.activity.recyclerview.LinearHorizantalActivity;
+import com.ideal.jalen.material.activity.recyclerview.LinearHorizontalActivity;
 import com.ideal.jalen.material.activity.recyclerview.LinearVerticalActivity;
 import com.ideal.jalen.material.activity.recyclerview.StaggeredActivity;
 import com.ideal.jalen.material.activity.recyclerview_refresh_autoloadmore.RecyclerViewRefreshAutoLoadMoreActivity;
@@ -31,11 +31,9 @@ import com.ideal.jalen.material.activity.textinput.TextInputLayoutActivity;
 import com.ideal.jalen.material.activity.toolbar.ToolbarActivity;
 
 /**
- * @author Jalen
- * @date 2017/6/23. 17:43
- * @editor
- * @date
- * @describe MaterialDesign主页面
+ * author: Jalen
+ * date: 2017/6/23. 17:43
+ * describe: MaterialDesign主页面
  */
 public class MaterialActivity extends BaseActivity {
     @Override
@@ -128,11 +126,11 @@ public class MaterialActivity extends BaseActivity {
     }
 
     public void onClickRecyclerViewLinearHorizantal(View v) {
-        startActivity(LinearHorizantalActivity.class);
+        startActivity(LinearHorizontalActivity.class);
     }
 
     public void onClickRecyclerViewStaggered(View v) {
-       startActivity(StaggeredActivity.class);
+        startActivity(StaggeredActivity.class);
     }
 
     public void onClickRecyclerViewGrid(View v) {

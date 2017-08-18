@@ -4,11 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 
 /**
- * @author Jalen
- * @date 2017/8/17
+ *author: Jalen
+ * date: 2017/8/17
  * @editor
- * @date
- * @describe 跳转工具类
+ * date:
+ * describe: 跳转工具类
  */
 public class StartUtil {
 

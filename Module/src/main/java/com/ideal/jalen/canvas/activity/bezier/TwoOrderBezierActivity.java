@@ -10,11 +10,9 @@ import com.ideal.jalen.base.BaseActivity;
 import com.ideal.jalen.utils.StartUtil;
 
 /**
- * @author Jalen
- * @date 2017/8/17
- * @editor
- * @date
- * @describe 二阶贝塞尔曲线
+ * author: Jalen
+ * date: 2017/8/17
+ * describe: 二阶贝塞尔曲线
  */
 public class TwoOrderBezierActivity extends BaseActivity {
     @Override

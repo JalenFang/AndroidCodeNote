@@ -15,13 +15,11 @@ import com.ideal.jalen.utils.IconsHelperUtil;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/5/24. 17:20
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/5/24. 17:20
+ * describe:
  */
-public class LinearHorizantalActivity extends BaseActivity {
+public class LinearHorizontalActivity extends BaseActivity {
 
     @BindView(R.id.activity_recyclerView)
     RecyclerView recyclerView;

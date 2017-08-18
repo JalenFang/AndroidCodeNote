@@ -8,11 +8,9 @@ import com.ideal.jalen.R;
 
 
 /**
- * @author Jalen
- * @date 2016/8/18. 9:32
- * @editor
- * @date
- * @describe 根据权限的ID获得权限的名字
+ * author: Jalen
+ * date: 2016/8/18. 9:32
+ * describe: 根据权限的ID获得权限的名字
  */
 public class PermissionUtils {
 

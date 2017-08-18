@@ -18,11 +18,9 @@ import butterknife.BindView;
 
 
 /**
- * @author Jalen
- * @date 2017/6/19. 15:16
- * @editor
- * @date
- * @describe 指定动画执行者
+ * author: Jalen
+ * date: 2017/6/19. 15:16
+ * describe: 指定动画执行者
  */
 public class TransitionAddTargetActivity extends BaseActivity {
 

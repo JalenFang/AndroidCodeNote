@@ -8,11 +8,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2017/5/8. 17:15
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/5/8. 17:15
+ * describe:
  */
 public class FloatingActionButtonActivity extends BaseActivity {
     @Override

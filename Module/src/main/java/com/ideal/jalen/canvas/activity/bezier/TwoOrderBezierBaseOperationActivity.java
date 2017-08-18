@@ -8,11 +8,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2017/8/17
- * @editor
- * @date
- * @describe 二阶贝塞尔曲线的基本使用
+ * author: Jalen
+ * date: 2017/8/17
+ * describe: 二阶贝塞尔曲线的基本使用
  */
 public class TwoOrderBezierBaseOperationActivity extends BaseActivity {
 

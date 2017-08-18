@@ -17,11 +17,11 @@ import com.ideal.jalen.base.BaseActivity;
 import butterknife.BindView;
 
 /**
- * @author Dragon
- * @date 2017/7/21
+ *author: Dragon
+ * date: 2017/7/21
  * @editor
- * @date
- * @describe
+ * date:
+ * describe:
  */
 public class Test1Acitivity extends BaseActivity {
 

@@ -12,9 +12,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.utils.ScreenUtils;
 
 /**
- * @author Jalen
- * @date 2016/12/6 21:46
- * @describe 矩形
+ * author: Jalen
+ * date: 2016/12/6 21:46
+ * describe: 矩形
  */
 public class RectView extends View {
     private Paint paint;

@@ -40,10 +40,10 @@ public class DrawableAdapter extends RecyclerView.Adapter<DrawableAdapter.ViewHo
         return (this.items != null) ? items.size() : 0;
     }
 
-    public static final class ViewHolder extends RecyclerView.ViewHolder {
-        protected ImageView bitmapIv;
+    static final class ViewHolder extends RecyclerView.ViewHolder {
+        ImageView bitmapIv;
 
-        public ViewHolder(View itemView) {
+        ViewHolder(View itemView) {
             super(itemView);
             bitmapIv = (ImageView) itemView.findViewById(R.id.drawable_card_item_iv);
         }

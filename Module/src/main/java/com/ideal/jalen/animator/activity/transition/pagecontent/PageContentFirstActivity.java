@@ -17,17 +17,15 @@ import com.ideal.jalen.constant.AnimatorConstant;
 
 
 /**
- * @author Jalen
- * @date 2017/6/20. 9:28
- * @editor
- * @date
- * @describe 页面内容过渡动画
+ * author: Jalen
+ * date: 2017/6/20. 9:28
+ * describe: 页面内容过渡动画
  */
 public class PageContentFirstActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        setTransiton();
+        setTransition();
         super.onCreate(savedInstanceState);
     }
 
@@ -56,7 +54,7 @@ public class PageContentFirstActivity extends BaseActivity {
         }
     }
 
-    private void setTransiton() {
+    private void setTransition() {
         if (Build.VERSION.SDK_INT >= 21) {
             getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
 

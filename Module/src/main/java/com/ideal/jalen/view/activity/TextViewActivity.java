@@ -1,7 +1,6 @@
 package com.ideal.jalen.view.activity;
 
 import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.widget.TextView;
@@ -12,11 +11,9 @@ import com.ideal.jalen.base.BaseActivity;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/8/1
- * @editor
- * @date
- * @describe TextView
+ * author: Jalen
+ * date: 2017/8/1
+ * describe: TextView
  */
 public class TextViewActivity extends BaseActivity {
 
@@ -39,8 +36,5 @@ public class TextViewActivity extends BaseActivity {
     }
 
     private void showFirst() {
-        if (Build.VERSION.SDK_INT >= 24) {
-//            tvFirst.setText();
-        }
     }
 }

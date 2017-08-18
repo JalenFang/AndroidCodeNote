@@ -14,15 +14,15 @@ import android.widget.TextView;
 import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
+import java.util.Locale;
+
 import butterknife.BindView;
 
 
 /**
- * @author Jalen
- * @date 2017/6/19. 17:05
- * @editor
- * @date
- * @describe 自定义颜色改变的过渡动画
+ * author: Jalen
+ * date: 2017/6/19. 17:05
+ * describe: 自定义颜色改变的过渡动画
  */
 public class TransitionCustomColorActivity extends BaseActivity {
 
@@ -59,7 +59,7 @@ public class TransitionCustomColorActivity extends BaseActivity {
     private CountDownTimer countDownTimer = new CountDownTimer(4 * 1000, 1000) {
         @Override
         public void onTick(long millisUntilFinished) {
-            tvDesc.setText(String.format("%d秒钟后开始执行延时动画", millisUntilFinished / 1000));
+            tvDesc.setText(String.format(Locale.CHINESE, "%d秒钟后开始执行延时动画", millisUntilFinished / 1000));
         }
 
         @Override

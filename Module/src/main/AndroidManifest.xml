@@ -119,7 +119,7 @@
             android:launchMode="standard" />
 
         <activity
-            android:name=".material.activity.recyclerview.LinearHorizantalActivity"
+            android:name=".material.activity.recyclerview.LinearHorizontalActivity"
             android:label="@string/material_recycler_linear_horizantal"
             android:launchMode="standard" />
 

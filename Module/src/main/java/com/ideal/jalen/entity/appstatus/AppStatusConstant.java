@@ -1,11 +1,9 @@
 package com.ideal.jalen.entity.appstatus;
 
 /**
- * @author Dragon
- * @date 2017/5/27. 10:26
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/5/27. 10:26
+ * describe:
  */
 public class AppStatusConstant {
     public static final int STATUS_FORCE_KILLED = -1;//应用在后台被强杀了

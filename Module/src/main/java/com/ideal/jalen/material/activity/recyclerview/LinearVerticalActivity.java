@@ -15,11 +15,11 @@ import com.ideal.jalen.utils.IconsHelperUtil;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/5/24. 16:52
+ *author: Jalen
+ * date: 2017/5/24. 16:52
  * @editor
- * @date
- * @describe
+ * date:
+ * describe:
  */
 public class LinearVerticalActivity extends BaseActivity {
 

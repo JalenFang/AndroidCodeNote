@@ -12,12 +12,12 @@ import android.widget.TextView;
 import com.ideal.jalen.R;
 import com.ideal.jalen.utils.ScreenUtils;
 
+import java.util.Locale;
+
 /**
- * @author Jalen
- * @date 2017/6/9. 9:59
- * @editor
- * @date
- * @describe 使用自定义属性和自定义样式的view   http://www.jianshu.com/p/61b79e7f88fc
+ * author: Jalen
+ * date: 2017/6/9. 9:59
+ * describe: 使用自定义属性和自定义样式的view   http://www.jianshu.com/p/61b79e7f88fc
  */
 
 /**
@@ -51,7 +51,7 @@ public class AttrsStyleView extends LinearLayout {
         textView1.setGravity(Gravity.CENTER);
         textView1.setTextColor(ContextCompat.getColor(context, R.color.common_style_blue));
         textView1.setTextSize(14);
-        textView1.setText("color1 " + Integer.toHexString(color1));
+        textView1.setText(String.format(Locale.CHINESE, "color1 %s", Integer.toHexString(color1)));
         LayoutParams layoutParams = new LayoutParams(LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutParams.setMargins(0, margin, 0, margin);
         addView(textView1, layoutParams);
@@ -60,7 +60,7 @@ public class AttrsStyleView extends LinearLayout {
         textView2.setGravity(Gravity.CENTER);
         textView2.setTextColor(ContextCompat.getColor(context, R.color.common_style_blue));
         textView2.setTextSize(14);
-        textView2.setText("color2 " + Integer.toHexString(color2));
+        textView2.setText(String.format(Locale.CHINESE, "color2 %s", Integer.toHexString(color2)));
         LayoutParams layoutParams2 = new LayoutParams(LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutParams2.setMargins(0, margin, 0, margin);
         addView(textView2, layoutParams2);
@@ -69,7 +69,7 @@ public class AttrsStyleView extends LinearLayout {
         textView3.setGravity(Gravity.CENTER);
         textView3.setTextColor(ContextCompat.getColor(context, R.color.common_style_blue));
         textView3.setTextSize(14);
-        textView3.setText("color3 " + Integer.toHexString(color3));
+        textView3.setText(String.format(Locale.CHINESE, "color3 %s", Integer.toHexString(color3)));
         LayoutParams layoutParams3 = new LayoutParams(LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutParams3.setMargins(0, margin, 0, margin);
         addView(textView3, layoutParams3);

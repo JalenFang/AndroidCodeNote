@@ -3,11 +3,9 @@ package com.ideal.jalen.material.activity.recyclerview_refresh_autoloadmore.inte
 import com.ideal.jalen.material.activity.recyclerview_refresh_autoloadmore.viewholder.RecyclerViewCommonViewHolder;
 
 /**
- * @author Jalen
- * @date 2017/6/14 15:04
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/6/14 15:04
+ * describe:
  */
 
 public interface OnItemClickListeners<T> {

@@ -11,9 +11,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.utils.ScreenUtils;
 
 /**
- * @author Jalen
- * @date 2016/12/14 21:04
- * @describe 线
+ * author: Jalen
+ * date: 2016/12/14 21:04
+ * describe: 线
  */
 public class LineView extends View {
 

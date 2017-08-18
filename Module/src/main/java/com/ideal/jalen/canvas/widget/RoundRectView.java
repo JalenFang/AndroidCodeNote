@@ -12,9 +12,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.utils.ScreenUtils;
 
 /**
- * @author Jalen
- * @date 2016/12/8 21:03
- * @describe 圆角矩形
+ * author: Jalen
+ * date: 2016/12/8 21:03
+ * describe: 圆角矩形
  */
 public class RoundRectView extends View {
 

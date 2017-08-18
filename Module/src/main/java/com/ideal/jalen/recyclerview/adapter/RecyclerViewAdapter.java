@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.ideal.jalen.R;
 
 import java.util.List;
+import java.util.Locale;
 
 public class RecyclerViewAdapter extends Adapter<ViewHolder> {
 
@@ -46,17 +47,17 @@ public class RecyclerViewAdapter extends Adapter<ViewHolder> {
     public void onBindViewHolder(final ViewHolder holder, int position) {
         ItemViewHolder itemViewHolder = (ItemViewHolder) holder;
         if (data == null) {
-            itemViewHolder.tv.setText("Current Position " + position);
+            itemViewHolder.tv.setText(String.format(Locale.CHINESE, "Current Position %d", position));
         } else {
             itemViewHolder.tv.setText(data.get(position));
         }
     }
 
 
-    static class ItemViewHolder extends ViewHolder {
+    private static class ItemViewHolder extends ViewHolder {
         TextView tv;
 
-        public ItemViewHolder(View view) {
+        ItemViewHolder(View view) {
             super(view);
             tv = (TextView) view.findViewById(R.id.item_base_tv);
         }

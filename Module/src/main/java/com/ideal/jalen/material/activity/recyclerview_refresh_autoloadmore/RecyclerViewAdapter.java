@@ -11,16 +11,14 @@ import com.ideal.jalen.material.activity.recyclerview_refresh_autoloadmore.base.
 import com.ideal.jalen.material.activity.recyclerview_refresh_autoloadmore.viewholder.RecyclerViewCommonViewHolder;
 
 /**
- * @author Jalen
- * @date 2017/6/14 15:05
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/6/14 15:05
+ * describe:
  */
 //可以自己的需求自定义RecyclerViewAdapter
-public class RecyclerViewAdapter extends RecyclerViewMultiTypeAdapter<String> {
+class RecyclerViewAdapter extends RecyclerViewMultiTypeAdapter<String> {
 
-    public RecyclerViewAdapter(Context context) {
+    RecyclerViewAdapter(Context context) {
         super(context);
     }
 

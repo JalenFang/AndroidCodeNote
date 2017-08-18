@@ -5,11 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 /**
- * @author Jalen
- * @date 2017/6/14 15:04
+ *author: Jalen
+ * date: 2017/6/14 15:04
  * @editor
- * @date
- * @describe
+ * date:
+ * describe:
  */
 public class Util {
     /**

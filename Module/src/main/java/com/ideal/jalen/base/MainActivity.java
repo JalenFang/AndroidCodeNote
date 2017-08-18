@@ -20,11 +20,9 @@ import com.ideal.jalen.test.Test1Acitivity;
 import com.ideal.jalen.view.activity.ViewActivity;
 
 /**
- * @author Jalen
- * @date 2017/6/22. 16:18
- * @editor
- * @date
- * @describe 主页面
+ * author: Jalen
+ * date: 2017/6/22. 16:18
+ * describe: 主页面
  */
 public class MainActivity extends BaseActivity {
     @Override
@@ -39,7 +37,9 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initUI(@Nullable Bundle savedInstanceState) {
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        if (null != getSupportActionBar()) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        }
     }
 
     @Override

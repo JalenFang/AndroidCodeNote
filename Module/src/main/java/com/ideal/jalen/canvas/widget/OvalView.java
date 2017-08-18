@@ -12,9 +12,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.utils.ScreenUtils;
 
 /**
- * @author Jalen
- * @date 2016/12/15 22:01
- * @describe 椭圆
+ * author: Jalen
+ * date: 2016/12/15 22:01
+ * describe: 椭圆
  */
 public class OvalView extends View {
     private Paint paint;

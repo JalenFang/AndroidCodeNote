@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 /**
- * @author Jalen
- * @date 2017/6/14 15:04
+ *author: Jalen
+ * date: 2017/6/14 15:04
  * @editor
- * @date
- * @describe
+ * date:
+ * describe:
  */
 public class RecyclerViewCommonViewHolder extends RecyclerView.ViewHolder {
     private SparseArray<View> mViews;

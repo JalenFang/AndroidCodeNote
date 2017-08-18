@@ -11,11 +11,9 @@ import com.ideal.jalen.R;
 
 
 /**
- * @author Jalen
- * @date 2017/5/8. 11:35
- * @editor
- * @date
- * @describe Toolbar的基本使用
+ * author: Jalen
+ * date: 2017/5/8. 11:35
+ * describe: Toolbar的基本使用
  */
 public class ToolbarActivity extends AppCompatActivity {
 

@@ -13,9 +13,9 @@ import com.ideal.jalen.utils.ScreenUtils;
 
 
 /**
- * @author Jalen
- * @date 2016/12/8 21:14
- * @describe 画文字
+ * author: Jalen
+ * date: 2016/12/8 21:14
+ * describe: 画文字
  */
 public class TextView extends View {
 

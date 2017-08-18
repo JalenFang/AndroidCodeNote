@@ -8,11 +8,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2017/7/3. 15:49
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/7/3
+ * describe:
  */
 public class AttrsStyleActivity extends BaseActivity {
     @Override

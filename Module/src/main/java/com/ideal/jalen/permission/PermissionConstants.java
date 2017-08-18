@@ -1,11 +1,9 @@
 package com.ideal.jalen.permission;
 
 /**
- * @author Dragon
- * @date 2016/8/18. 9:15
- * @editor
- * @date
- * @describe 区别权限
+ * author: Dragon
+ * date: 2016/8/18. 9:15
+ * describe: 区别权限
  */
 public class PermissionConstants {
     /**

@@ -9,9 +9,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.ideal.jalen.R;
@@ -24,11 +21,9 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/5/12. 9:53
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/5/12. 9:53
+ * describe:
  */
 public class TabLayoutBottomActivity extends BaseActivity {
 

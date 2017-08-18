@@ -12,11 +12,9 @@ import com.ideal.jalen.entity.appstatus.AppStatusConstant;
 import com.ideal.jalen.entity.appstatus.AppStatusManager;
 
 /**
- * @author Jalen
- * @date 2017/6/22. 16:19
- * @editor
- * @date
- * @describe 闪屏页面
+ * author: Jalen
+ * date: 2017/6/22. 16:19
+ * describe: 闪屏页面
  */
 public class SplashActivity extends AppCompatActivity {
 

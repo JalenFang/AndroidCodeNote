@@ -12,11 +12,9 @@ import com.ideal.jalen.R;
 
 
 /**
- * @author Jalen
- * @date 2017/5/12 10:15
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/5/12 10:15
+ * describe:
  */
 public class FragmentFactory extends Fragment {
     private static final String EXTRA_CONTENT = "content";

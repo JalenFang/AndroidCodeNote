@@ -8,11 +8,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2016/12/6
- * @editor
- * @date
- * @describe canvas的基本操作
+ * author: Jalen
+ * date: 2016/12/6
+ * describe: canvas的基本操作
  */
 public class CanvasBaseOperationActivity extends BaseActivity {
     @Override

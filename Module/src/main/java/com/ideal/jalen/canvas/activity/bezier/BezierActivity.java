@@ -10,9 +10,9 @@ import com.ideal.jalen.base.BaseActivity;
 import com.ideal.jalen.utils.StartUtil;
 
 /**
- * @author Jalen
- * @date 2016/12/14
- * @describe 贝塞尔曲线
+ * author: Jalen
+ * date: 2016/12/14
+ * describe: 贝塞尔曲线
  */
 public class BezierActivity extends BaseActivity {
     @Override

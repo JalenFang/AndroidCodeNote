@@ -22,11 +22,9 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/5/12. 10:56
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/5/12. 10:56
+ * describe:
  */
 public class TabLayoutTopActivity extends BaseActivity {
     @BindView(R.id.activity_tab_layout_top_viewPager)
@@ -36,7 +34,7 @@ public class TabLayoutTopActivity extends BaseActivity {
     TabLayout tabLayout;
 
     private static final int TAB_COUNT = 3;
-    private List<String> cotentList;
+    private List<String> contentList;
     private List<Fragment> fragmentList;
     private ViewPagerAdapter viewPagerAdapter;
 
@@ -72,8 +70,8 @@ public class TabLayoutTopActivity extends BaseActivity {
                 tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
                 break;
             case R.id.tab_layout_top_menu_add:
-                cotentList.add("Tab " + cotentList.size());
-                fragmentList.add(FragmentFactory.newInstant(cotentList.get(cotentList.size() - 1)));
+                contentList.add("Tab " + contentList.size());
+                fragmentList.add(FragmentFactory.newInstant(contentList.get(contentList.size() - 1)));
                 viewPagerAdapter.notifyDataSetChanged();
                 tabLayout.setupWithViewPager(viewPager);
                 break;
@@ -84,14 +82,14 @@ public class TabLayoutTopActivity extends BaseActivity {
     }
 
     private void initViewPager() {
-        cotentList = new ArrayList<>();
+        contentList = new ArrayList<>();
         for (int i = 0; i < TAB_COUNT; i++) {
-            cotentList.add("tab" + i);
+            contentList.add("tab" + i);
         }
 
         fragmentList = new ArrayList<>();
         for (int i = 0; i < TAB_COUNT; i++) {
-            fragmentList.add(FragmentFactory.newInstant(cotentList.get(i)));
+            fragmentList.add(FragmentFactory.newInstant(contentList.get(i)));
         }
 
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
@@ -106,16 +104,18 @@ public class TabLayoutTopActivity extends BaseActivity {
         for (int i = 0; i < TAB_COUNT; i++) {
             TabLayout.Tab tabAt = tabLayout.getTabAt(i);
             if (tabAt != null) {
-                tabAt.setText(cotentList.get(i));
+                tabAt.setText(contentList.get(i));
             }
         }
-
-        tabLayout.getTabAt(0).select();
+        TabLayout.Tab tabAt = tabLayout.getTabAt(0);
+        if (null != tabAt) {
+            tabAt.select();
+        }
     }
 
     private class ViewPagerAdapter extends FragmentPagerAdapter {
 
-        public ViewPagerAdapter(FragmentManager fm) {
+        ViewPagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
@@ -131,7 +131,7 @@ public class TabLayoutTopActivity extends BaseActivity {
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return cotentList.get(position);
+            return contentList.get(position);
         }
     }
 }

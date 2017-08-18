@@ -18,11 +18,9 @@ import com.ideal.jalen.animator.activity.transition.TransitionDelayActivity;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2017/6/23. 14:48
- * @editor
- * @date
- * @describe 动画的主界面
+ * author: Jalen
+ * date: 2017/6/23. 14:48
+ * describe: 动画的主界面
  */
 public class AnimatorActivity extends BaseActivity {
     @Override

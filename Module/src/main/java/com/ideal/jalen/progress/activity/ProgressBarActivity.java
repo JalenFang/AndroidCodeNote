@@ -10,9 +10,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2017/7/29 17:33
- * @describe
+ * author: Jalen
+ * date: 2017/7/29 17:33
+ * describe:
  */
 public class ProgressBarActivity extends BaseActivity {
     @Override

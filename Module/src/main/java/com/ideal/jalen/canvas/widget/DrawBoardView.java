@@ -14,11 +14,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.utils.ScreenUtils;
 
 /**
- * @author Jalen
- * @date 2017/8/18
- * @editor
- * @date
- * @describe 画板（使用两阶贝塞尔曲线）
+ * author: Jalen
+ * date: 2017/8/18
+ * describe: 画板（使用两阶贝塞尔曲线）
  */
 public class DrawBoardView extends View {
 

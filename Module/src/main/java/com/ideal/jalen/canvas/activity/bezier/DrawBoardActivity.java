@@ -13,11 +13,9 @@ import com.ideal.jalen.canvas.widget.DrawBoardView;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/8/17
- * @editor
- * @date
- * @describe 画板（使用两阶贝塞尔曲线）
+ * author: Jalen
+ * date: 2017/8/17
+ * describe: 画板（使用两阶贝塞尔曲线）
  */
 public class DrawBoardActivity extends BaseActivity {
 

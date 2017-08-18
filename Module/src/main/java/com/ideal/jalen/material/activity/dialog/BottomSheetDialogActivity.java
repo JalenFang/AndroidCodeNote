@@ -15,11 +15,9 @@ import com.ideal.jalen.base.BaseActivity;
 import com.ideal.jalen.recyclerview.adapter.RecyclerViewAdapter;
 
 /**
- * @author Jalen
- * @date 2017/5/11. 16:19
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/5/11. 16:19
+ * describe:
  */
 public class BottomSheetDialogActivity extends BaseActivity {
 

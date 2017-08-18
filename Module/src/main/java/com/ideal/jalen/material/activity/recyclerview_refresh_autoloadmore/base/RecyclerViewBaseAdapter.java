@@ -19,16 +19,14 @@ import java.util.List;
 //isAddFooter和isOpenLoadMore不能同时为true  footerView有两种，一种是用于自动加载 另一种是尾部 它们不会同时存在
 
 /**
- * @author Jalen
- * @date 2017/6/14 15:04
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/6/14 15:04
+ * describe:
  */
 public abstract class RecyclerViewBaseAdapter<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    public static final int TYPE_HEADER_VIEW = 0;
-    public static final int TYPE_COMMON_VIEW = 1;
-    public static final int TYPE_FOOTER_VIEW = 2;
+    protected static final int TYPE_HEADER_VIEW = 0;
+    protected static final int TYPE_COMMON_VIEW = 1;
+    protected static final int TYPE_FOOTER_VIEW = 2;
     protected Context context;
     private OnLoadMoreListener onLoadMoreListener;//加载更多回调
 
@@ -37,7 +35,7 @@ public abstract class RecyclerViewBaseAdapter<T> extends RecyclerView.Adapter<Re
     private View loadEndView; //加载完成
     private LinearLayout footerLayout;//加载布局
 
-    protected List<T> dataList;//数据源
+    List<T> dataList;//数据源
 
     private boolean isAutoLoadMore = true;//是否自动加载，当数据不满一屏幕会自动加载
 
@@ -49,7 +47,7 @@ public abstract class RecyclerViewBaseAdapter<T> extends RecyclerView.Adapter<Re
 
     protected abstract int getViewType(int position, T data);
 
-    public RecyclerViewBaseAdapter(Context context) {
+    RecyclerViewBaseAdapter(Context context) {
         this.context = context;
         dataList = new ArrayList<>();
     }

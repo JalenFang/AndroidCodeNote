@@ -15,11 +15,9 @@ import com.ideal.jalen.utils.ScreenUtils;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/5/9. 11:26
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/5/9. 11:26
+ * describe:
  */
 
 /**

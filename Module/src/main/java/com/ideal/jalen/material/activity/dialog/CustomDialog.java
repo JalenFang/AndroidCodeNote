@@ -8,16 +8,14 @@ import android.support.design.widget.BottomSheetDialog;
 import android.view.ViewGroup;
 
 /**
- * @author Jalen
- * @date 2017/6/12. 14:31
- * @editor
- * @date
- * @describe 解决BottomSheetDialog弹出之后状态栏为黑色的
+ * author: Jalen
+ * date: 2017/6/12. 14:31
+ * describe: 解决BottomSheetDialog弹出之后状态栏为黑色的
  */
-public class CustomDialog extends BottomSheetDialog {
+class CustomDialog extends BottomSheetDialog {
     private int screenHeight;
 
-    public CustomDialog(@NonNull Context context, int screenHeight) {
+    CustomDialog(@NonNull Context context, int screenHeight) {
         super(context);
         this.screenHeight = screenHeight;
     }
@@ -27,7 +25,9 @@ public class CustomDialog extends BottomSheetDialog {
         super.onCreate(savedInstanceState);
         int statusBarHeight = getStatusBarHeight(getContext());
         int dialogHeight = screenHeight - statusBarHeight;
-        getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, dialogHeight == 0 ? ViewGroup.LayoutParams.MATCH_PARENT : dialogHeight);
+        if (getWindow() != null) {
+            getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, dialogHeight == 0 ? ViewGroup.LayoutParams.MATCH_PARENT : dialogHeight);
+        }
     }
 
 

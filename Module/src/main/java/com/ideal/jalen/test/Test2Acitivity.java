@@ -12,11 +12,11 @@ import com.ideal.jalen.base.BaseActivity;
 import butterknife.OnLongClick;
 
 /**
- * @author Dragon
- * @date 2017/7/21
+ *author: Dragon
+ * date: 2017/7/21
  * @editor
- * @date
- * @describe
+ * date:
+ * describe:
  */
 public class Test2Acitivity extends BaseActivity {
     @Override

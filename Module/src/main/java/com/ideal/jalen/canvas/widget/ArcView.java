@@ -12,9 +12,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.utils.ScreenUtils;
 
 /**
- * @author Jalen
- * @date 2016/12/23 21:52
- * @describe 弧线
+ * author: Jalen
+ * date: 2016/12/23 21:52
+ * describe: 弧线
  */
 public class ArcView extends View {
     private Paint paint;

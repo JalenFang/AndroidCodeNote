@@ -29,11 +29,9 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/6/14. 11:41
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/6/14. 11:41
+ * describe:
  */
 public class RecyclerViewRefreshAutoLoadMoreActivity extends BaseActivity {
     @BindView(R.id.activity_recyclerview_refresh_autoloadmore_recyclerView)

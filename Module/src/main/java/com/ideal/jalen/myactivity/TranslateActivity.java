@@ -8,11 +8,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2017/8/1
- * @editor
- * @date
- * @describe 透明activity
+ * author: Jalen
+ * date: 2017/8/1
+ * describe: 透明activity
  */
 public class TranslateActivity extends BaseActivity {
 

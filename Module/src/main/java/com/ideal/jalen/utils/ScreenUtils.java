@@ -47,9 +47,6 @@ public class ScreenUtils {
 
     /**
      * 每寸像素：120/160/240/320
-     *
-     * @param context
-     * @return
      */
     public static int getDensityDPI(Context context) {
         DisplayMetrics dm = new DisplayMetrics();
@@ -58,8 +55,6 @@ public class ScreenUtils {
     }
 
     /**
-     * @param context
-     * @return
      */
     public static float getDpiWidth(Context context) {
         DisplayMetrics dm = new DisplayMetrics();
@@ -68,8 +63,6 @@ public class ScreenUtils {
     }
 
     /**
-     * @param context
-     * @return
      */
     public static float getDpiHeight(Context context) {
         DisplayMetrics dm = new DisplayMetrics();
@@ -79,9 +72,6 @@ public class ScreenUtils {
 
     /**
      * 获取 屏幕 宽度
-     *
-     * @param activity
-     * @return
      */
     public static int screenWidth(Activity activity) {
         if (activity == null) {

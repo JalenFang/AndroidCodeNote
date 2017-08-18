@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
@@ -20,11 +20,9 @@ import butterknife.BindView;
 
 
 /**
- * @author Jalen
- * @date 2017/5/12. 17:39
- * @editor
- * @date
- * @describe 设置从哪个方向划出 需要给view设置 layout_gravity属性  可以参考XML文件
+ * author: Jalen
+ * date: 2017/5/12. 17:39
+ * describe: 设置从哪个方向划出 需要给view设置 layout_gravity属性  可以参考XML文件
  */
 public class DrawerLayoutSimpleActivity extends BaseActivity {
 
@@ -56,7 +54,9 @@ public class DrawerLayoutSimpleActivity extends BaseActivity {
 
     @Override
     public void initUI(@Nullable Bundle savedInstanceState) {
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        if (null != getSupportActionBar()) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        }
         initRecyclerView();
     }
 
@@ -77,10 +77,10 @@ public class DrawerLayoutSimpleActivity extends BaseActivity {
                 drawerLayout.setScrimColor(ContextCompat.getColor(getApplicationContext(), R.color.common_style_blue));
                 break;
             case R.id.drawer_layout_menu_right://从右侧主动划出
-                drawerLayout.openDrawer(Gravity.RIGHT);
+                drawerLayout.openDrawer(GravityCompat.END);
                 break;
             case R.id.drawer_layout_menu_left://从左侧主动划出
-                drawerLayout.openDrawer(Gravity.LEFT);
+                drawerLayout.openDrawer(GravityCompat.START);
                 break;
             default:
                 break;

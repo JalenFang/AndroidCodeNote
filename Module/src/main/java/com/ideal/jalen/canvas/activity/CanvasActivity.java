@@ -11,11 +11,9 @@ import com.ideal.jalen.base.BaseActivity;
 import com.ideal.jalen.canvas.activity.bezier.BezierActivity;
 
 /**
- * @author Jalen
- * @date 2016/12/6 21:46
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2016/12/6 21:46
+ * describe:
  */
 public class CanvasActivity extends BaseActivity {
     @Override

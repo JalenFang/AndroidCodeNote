@@ -10,11 +10,9 @@ import android.view.View;
 import com.ideal.jalen.utils.ScreenUtils;
 
 /**
- * @author Dragon
- * @date 2017/4/13. 10:22
- * @editor
- * @date
- * @describe 绘制点
+ * author: Dragon
+ * date: 2017/4/13. 10:22
+ * describe: 绘制点
  */
 public class PointView extends View {
 

@@ -13,11 +13,9 @@ import com.ideal.jalen.base.BaseActivity;
 
 
 /**
- * @author Jalen
- * @date 2017/6/20. 14:21
- * @editor
- * @date
- * @describe 共享元素
+ * author: Jalen
+ * date: 2017/6/20. 14:21
+ * describe: 共享元素
  */
 public class ShareElementFirstActivity extends BaseActivity {
     @Override

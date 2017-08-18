@@ -10,14 +10,12 @@ import android.transition.TransitionValues;
 import android.view.ViewGroup;
 
 /**
- * @author Jalen
- * @date 2017/6/19. 16:22
- * @editor
- * @date
- * @describe 自定义颜色改变的动画
+ * author: Jalen
+ * date: 2017/6/19. 16:22
+ * describe: 自定义颜色改变的动画
  */
 @TargetApi(19)
-public class CustomColorTransition extends Transition {
+class CustomColorTransition extends Transition {
     private static final String CUSTOM_BACKGROUND_NAME = "com.jalen.animator.activity.transition.customtransition.CustomColorTransition.custom_background_name";
 
     @Override
@@ -47,7 +45,7 @@ public class CustomColorTransition extends Transition {
         Integer startBackground = (Integer) startValues.values.get(CUSTOM_BACKGROUND_NAME);
         Integer endBackground = (Integer) endValues.values.get(CUSTOM_BACKGROUND_NAME);
 
-        if (startBackground != endBackground) {
+        if (!startBackground.equals(endBackground)) {
             ValueAnimator valueAnimator = ValueAnimator.ofObject(new ArgbEvaluator(), startBackground, endBackground);
             valueAnimator.setDuration(2000);
             valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {

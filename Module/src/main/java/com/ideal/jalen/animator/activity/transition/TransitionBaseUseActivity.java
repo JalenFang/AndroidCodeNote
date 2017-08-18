@@ -17,11 +17,9 @@ import com.ideal.jalen.base.BaseActivity;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/6/16. 14:51
- * @editor
- * @date
- * @describe 过渡动画的基本使用
+ * author: Jalen
+ * date: 2017/6/16. 14:51
+ * describe: 过渡动画的基本使用
  */
 public class TransitionBaseUseActivity extends BaseActivity {
 

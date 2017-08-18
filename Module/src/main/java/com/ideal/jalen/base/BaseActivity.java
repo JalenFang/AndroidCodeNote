@@ -28,11 +28,9 @@ import java.util.List;
 import butterknife.ButterKnife;
 
 /**
- * @author Jalen
- * @date 2017/6/22. 11:48
- * @editor
- * @date
- * @describe Activity的基类
+ * author: Jalen
+ * date: 2017/6/22. 11:48
+ * describe: Activity的基类
  */
 public abstract class BaseActivity extends AppCompatActivity {
 
@@ -64,7 +62,9 @@ public abstract class BaseActivity extends AppCompatActivity {
 
                 if (toolbar != null) {
                     setSupportActionBar(toolbar);
-                    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                    if (null != getSupportActionBar()) {
+                        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                    }
                 }
 
                 initUI(savedInstanceState);
@@ -139,7 +139,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     //检查多个权限
     public void checkPermission(List<Integer> permissionIdList) {
-        if (permissionIdList == null && permissionIdList.isEmpty()) {
+        if (permissionIdList == null || permissionIdList.isEmpty()) {
             return;
         }
 
@@ -174,7 +174,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @return true 有权限  false没有权限
      */
     public boolean checkPermission(String permissionName) {
-        return ContextCompat.checkSelfPermission(this, permissionName) == PackageManager.PERMISSION_GRANTED ? true : false;
+        return ContextCompat.checkSelfPermission(this, permissionName) == PackageManager.PERMISSION_GRANTED;
     }
 
     private void requestPermission(@IntRange(from = PermissionConstants.PERMISSION_NUM_MIN, to = PermissionConstants.PERMISSION_NUM_MAX) int permissionId) {
@@ -186,7 +186,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (grantResults != null && grantResults.length > 0) {
+        if (grantResults.length > 0) {
             switch (requestCode) {
                 case PermissionConstants.READ_PHONE_STATE:
                 case PermissionConstants.CALL_PHONE:

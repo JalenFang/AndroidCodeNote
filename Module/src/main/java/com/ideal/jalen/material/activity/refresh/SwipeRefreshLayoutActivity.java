@@ -18,11 +18,9 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/5/18. 14:30
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/5/18. 14:30
+ * describe:
  */
 public class SwipeRefreshLayoutActivity extends BaseActivity {
 
@@ -33,7 +31,7 @@ public class SwipeRefreshLayoutActivity extends BaseActivity {
     RecyclerView recyclerView;
 
     private Handler handler = new Handler();
-    List<String> dataList = new ArrayList();
+    List<String> dataList = new ArrayList<>();
     private RecyclerViewAdapter recyclerViewAdapter;
 
     private static final int DELAYED_TIME = 2000;
@@ -80,7 +78,7 @@ public class SwipeRefreshLayoutActivity extends BaseActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                List dataList = new ArrayList();
+                List<String> dataList = new ArrayList<>();
                 int j = 0;
                 for (int i = count; i < count + 20; i++) {
                     dataList.add("" + i);

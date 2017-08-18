@@ -12,11 +12,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2017/5/8. 16:26
- * @editor
- * @date
- * @describe
+ *author: Jalen
+ * date: 2017/5/8. 16:26
+ * describe:
  */
 public class SnackbarActivity extends BaseActivity {
 

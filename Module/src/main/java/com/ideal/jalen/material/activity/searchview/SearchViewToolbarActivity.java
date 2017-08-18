@@ -20,11 +20,9 @@ import com.ideal.jalen.base.BaseActivity;
 import java.lang.reflect.Method;
 
 /**
- * @author Jalen
- * @date 2017/6/7. 9:19
- * @editor
- * @date
- * @describe 参考文章 http://www.jianshu.com/p/7c1e78e91506
+ * author: Jalen
+ * date: 2017/6/7. 9:19
+ * describe: 参考文章 http://www.jianshu.com/p/7c1e78e91506
  */
 public class SearchViewToolbarActivity extends BaseActivity {
 

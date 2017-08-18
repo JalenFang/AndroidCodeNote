@@ -12,11 +12,9 @@ import com.ideal.jalen.base.BaseActivity;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/5/17. 15:13
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/5/17. 15:13
+ * describe:
  */
 public class DrawerLayoutAnimationActivity extends BaseActivity {
 
@@ -37,7 +35,9 @@ public class DrawerLayoutAnimationActivity extends BaseActivity {
 
     @Override
     public void initUI(@Nullable Bundle savedInstanceState) {
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        if (null != getSupportActionBar()) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        }
         mActionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(mActionBarDrawerToggle);
     }

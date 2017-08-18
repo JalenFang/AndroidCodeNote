@@ -14,9 +14,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.utils.ScreenUtils;
 
 /**
- * @author Jalen
- * @date 2016/12/14
- * @describe 两阶贝塞尔曲线
+ * author: Jalen
+ * date: 2016/12/14
+ * describe: 两阶贝塞尔曲线
  */
 public class TwoOrderBezierView extends View {
 

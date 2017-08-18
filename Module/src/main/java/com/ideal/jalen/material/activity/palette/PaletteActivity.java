@@ -13,11 +13,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2017/6/9. 15:42
- * @editor
- * @date
- * @describe 提取图片的颜色 http://www.jianshu.com/p/9fcf316031ba
+ * author: Jalen
+ * date: 2017/6/9. 15:42
+ * describe: 提取图片的颜色 http://www.jianshu.com/p/9fcf316031ba
  */
 public class PaletteActivity extends BaseActivity {
 
@@ -93,11 +91,10 @@ public class PaletteActivity extends BaseActivity {
      *                  例如："#FFAABBCC",最左边到最右每两个字母就是代表alpha（透明度）、
      *                  red（红）、green（绿）、blue（蓝）。每种颜色值占一个字节(8位)，值域0~255
      *                  所以下面使用移位的方法可以得到每种颜色的值，然后每种颜色值减小一下，在合成RGB颜色，颜色就会看起来深一些了
-     * @return
      */
 
     private int colorBurn(int RGBValues) {
-        int alpha = RGBValues >> 24;
+//        int alpha = RGBValues >> 24;
         int red = RGBValues >> 16 & 0xFF;
         int green = RGBValues >> 8 & 0xFF;
         int blue = RGBValues & 0xFF;

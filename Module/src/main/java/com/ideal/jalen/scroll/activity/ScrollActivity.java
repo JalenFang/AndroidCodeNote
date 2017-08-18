@@ -8,11 +8,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2017/6/23. 17:44
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/6/23. 17:44
+ * describe:
  */
 public class ScrollActivity extends BaseActivity {
     @Override

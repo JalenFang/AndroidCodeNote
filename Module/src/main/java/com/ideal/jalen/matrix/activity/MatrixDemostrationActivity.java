@@ -16,11 +16,9 @@ import com.ideal.jalen.base.BaseActivity;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/6/23. 10:55
- * @editor
- * @date
- * @describe Matrix操作演示
+ * author: Jalen
+ * date: 2017/6/23. 10:55
+ * describe: Matrix操作演示
  */
 public class MatrixDemostrationActivity extends BaseActivity {
 

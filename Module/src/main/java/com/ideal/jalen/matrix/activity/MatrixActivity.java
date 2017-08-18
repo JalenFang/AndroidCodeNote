@@ -12,11 +12,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2017/6/22. 17:55
- * @editor
- * @date
- * @describe 矩阵的使用介绍
+ * author: Jalen
+ * date: 2017/6/22
+ * describe: 矩阵的使用介绍
  */
 public class MatrixActivity extends BaseActivity {
 

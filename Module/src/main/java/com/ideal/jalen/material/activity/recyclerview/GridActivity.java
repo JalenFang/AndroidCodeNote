@@ -14,11 +14,9 @@ import com.ideal.jalen.utils.IconsHelperUtil;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/5/24. 18:23
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/5/24. 18:23
+ * describe:
  */
 public class GridActivity extends BaseActivity {
 

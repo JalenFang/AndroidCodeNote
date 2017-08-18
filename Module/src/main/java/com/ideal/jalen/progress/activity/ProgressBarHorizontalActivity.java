@@ -15,9 +15,9 @@ import com.ideal.jalen.base.BaseActivity;
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/7/29 17:46
- * @describe 水平进度条
+ *author: Jalen
+ * date: 2017/7/29 17:46
+ * describe: 水平进度条
  */
 public class ProgressBarHorizontalActivity extends BaseActivity {
     @BindView(R.id.activity_progress_bar_horizontal_tvDesc)

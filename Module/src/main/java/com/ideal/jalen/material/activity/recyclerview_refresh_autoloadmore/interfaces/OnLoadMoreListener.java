@@ -1,11 +1,11 @@
 package com.ideal.jalen.material.activity.recyclerview_refresh_autoloadmore.interfaces;
 
 /**
- * @author Jalen
- * @date 2017/6/14 15:04
+ *author: Jalen
+ * date: 2017/6/14 15:04
  * @editor
- * @date
- * @describe
+ * date:
+ * describe:
  */
 public interface OnLoadMoreListener {
     /**

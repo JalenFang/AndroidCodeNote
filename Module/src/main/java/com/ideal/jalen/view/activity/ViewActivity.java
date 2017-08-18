@@ -10,11 +10,9 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 
 /**
- * @author Jalen
- * @date 2017/8/1
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/8/1
+ * describe:
  */
 public class ViewActivity extends BaseActivity {
     @Override

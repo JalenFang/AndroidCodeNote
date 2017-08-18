@@ -16,14 +16,14 @@ import com.ideal.jalen.R;
 import com.ideal.jalen.base.BaseActivity;
 import com.ideal.jalen.utils.ScreenUtils;
 
+import java.util.Locale;
+
 import butterknife.BindView;
 
 /**
- * @author Jalen
- * @date 2017/6/19. 15:35
- * @editor
- * @date
- * @describe
+ * author: Jalen
+ * date: 2017/6/19. 15:35
+ * describe:
  */
 public class TransitionDelayActivity extends BaseActivity {
 
@@ -31,10 +31,10 @@ public class TransitionDelayActivity extends BaseActivity {
     LinearLayout llRootView;
 
     @BindView(R.id.activity_transition_delay_view_circul_one)
-    View viewCirculOne;
+    View viewCircularOne;
 
     @BindView(R.id.activity_transition_delay_view_circul_two)
-    View viewCirculTwo;
+    View viewCircularTwo;
 
     @BindView(R.id.activity_transition_delay_tv_desc)
     TextView tvDesc;
@@ -63,7 +63,7 @@ public class TransitionDelayActivity extends BaseActivity {
     private CountDownTimer countDownTimer = new CountDownTimer(4 * 1000, 1000) {
         @Override
         public void onTick(long millisUntilFinished) {
-            tvDesc.setText(String.format("%d秒钟后开始执行延时动画", millisUntilFinished / 1000));
+            tvDesc.setText(String.format(Locale.CHINESE, "%d秒钟后开始执行延时动画", millisUntilFinished / 1000));
         }
 
         @Override
@@ -82,15 +82,15 @@ public class TransitionDelayActivity extends BaseActivity {
             int sizeOne = ScreenUtils.dp2px(getActivity(), 150);
             int sizeTwo = ScreenUtils.dp2px(getActivity(), 50);
 
-            ViewGroup.LayoutParams layoutParams = viewCirculOne.getLayoutParams();
+            ViewGroup.LayoutParams layoutParams = viewCircularOne.getLayoutParams();
             layoutParams.height = sizeOne;
             layoutParams.width = sizeOne;
-            viewCirculOne.setLayoutParams(layoutParams);
+            viewCircularOne.setLayoutParams(layoutParams);
 
-            ViewGroup.LayoutParams layoutParams2 = viewCirculTwo.getLayoutParams();
+            ViewGroup.LayoutParams layoutParams2 = viewCircularTwo.getLayoutParams();
             layoutParams2.height = sizeTwo;
             layoutParams2.width = sizeTwo;
-            viewCirculTwo.setLayoutParams(layoutParams2);
+            viewCircularTwo.setLayoutParams(layoutParams2);
         }
     }
 }

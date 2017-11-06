@@ -20,7 +20,7 @@ import butterknife.BindView;
  * date: 2017/6/23. 10:55
  * describe: Matrix操作演示
  */
-public class MatrixDemostrationActivity extends BaseActivity {
+public class MatrixDemoActivity extends BaseActivity {
 
     @BindView(R.id.activity_matrix_demostration_iv_pic)
     ImageView ivPic;

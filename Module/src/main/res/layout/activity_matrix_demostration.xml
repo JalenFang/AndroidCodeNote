@@ -17,7 +17,7 @@
             android:orientation="vertical">
 
             <Space style="@style/space_style" />
-            
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"

@@ -66,7 +66,7 @@ public class MatrixActivity extends BaseActivity {
     }
 
     public void onClickMatrixDemostration(View view) {
-        startActivity(MatrixDemostrationActivity.class);
+        startActivity(MatrixDemoActivity.class);
     }
 
     private void startActivity(Class<?> activity) {

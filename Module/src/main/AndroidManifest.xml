@@ -29,7 +29,7 @@
             android:launchMode="standard" />
 
         <activity
-            android:name=".matrix.activity.MatrixDemostrationActivity"
+            android:name=".matrix.activity.MatrixDemoActivity"
             android:label="@string/matrix_demonstration"
             android:launchMode="standard" />
 

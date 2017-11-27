@@ -1,22 +1,30 @@
 package com.ideal.jalen.base;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.Toast;
 
 import com.ideal.jalen.R;
 import com.ideal.jalen.animator.activity.AnimatorActivity;
 import com.ideal.jalen.attrsstyle.activity.AttrsStyleActivity;
 import com.ideal.jalen.canvas.activity.CanvasActivity;
+import com.ideal.jalen.constant.IPCConstant;
 import com.ideal.jalen.entity.appstatus.AppStatusConstant;
+import com.ideal.jalen.ipc.aidl.AIDLService;
+import com.ideal.jalen.ipc.aidl.AIDLServiceConnection;
+import com.ideal.jalen.ipc.messenger.MessengerService;
+import com.ideal.jalen.ipc.messenger.MessengerServiceConnection;
 import com.ideal.jalen.material.activity.MaterialActivity;
 import com.ideal.jalen.matrix.activity.MatrixActivity;
 import com.ideal.jalen.myactivity.MyActivity;
 import com.ideal.jalen.progress.activity.ProgressBarActivity;
 import com.ideal.jalen.splash.SplashActivity;
 import com.ideal.jalen.test.Test1Acitivity;
+import com.ideal.jalen.utils.DialogUtil;
 import com.ideal.jalen.view.activity.ViewActivity;
 
 /**
@@ -91,6 +99,42 @@ public class MainActivity extends BaseActivity {
 
     public void onClickView(View view) {
         startActivity(ViewActivity.class);
+    }
+
+    public void onClickInterProcessCommunication(View view) {
+        DialogUtil.getInstance().showDialog(MainActivity.this, getString(R.string.ipc), getActivity().getResources().getStringArray(R.array.ipc_type), new DialogUtil.ReturnClickPosition() {
+            @Override
+            public void clickPosition(int position) {
+                Toast.makeText(MainActivity.this, "" + position, Toast.LENGTH_SHORT).show();
+                switch (position) {
+                    case IPCConstant.INTENT:
+                        Intent intent = new Intent();
+                        ComponentName cn = new ComponentName("com.ideal.jalen",
+                                "com.ideal.jalen.ipc.intent.IntentActivity1");
+                        intent.setComponent(cn);
+                        startActivity(intent);
+
+//                        startActivity(new Intent(getActivity(), IntentActivity1.class));
+                        break;
+                    case IPCConstant.MESSENGER:
+                        Intent myIntent = new Intent(getActivity(), MessengerService.class);
+                        MessengerServiceConnection messengerServiceConnection = new MessengerServiceConnection();
+                        bindService(myIntent, messengerServiceConnection, BIND_AUTO_CREATE);
+                        break;
+                    case IPCConstant.AIDL:
+                        Intent intentAIDL = new Intent(getActivity(), AIDLService.class);
+                        AIDLServiceConnection aidlServiceConnection = new AIDLServiceConnection();
+                        bindService(intentAIDL, aidlServiceConnection, BIND_AUTO_CREATE);
+                        break;
+                    case IPCConstant.CONTENT_PROVIDER:
+                        break;
+                    case IPCConstant.SOCKET:
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
     }
 
     public void onClickTest(View view) {

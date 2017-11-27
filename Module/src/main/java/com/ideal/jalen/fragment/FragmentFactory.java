@@ -14,7 +14,7 @@ import com.ideal.jalen.R;
 /**
  * author: Jalen
  * date: 2017/5/12 10:15
- * describe:
+ * describe:fragment的创建工厂
  */
 public class FragmentFactory extends Fragment {
     private static final String EXTRA_CONTENT = "content";

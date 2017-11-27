@@ -249,6 +249,26 @@
             android:label="@string/test2"
             android:launchMode="standard" />
 
+        <activity
+            android:name=".ipc.intent.IntentActivity1"
+            android:label="@string/intent1"
+            android:launchMode="standard"
+            android:process=":intent1" />
+
+        <activity
+            android:name=".ipc.intent.IntentActivity2"
+            android:label="@string/intent2"
+            android:launchMode="standard"
+            android:process=":intent2" />
+
+        <service
+            android:name=".ipc.messenger.MessengerService"
+            android:process=":myService" />
+
+        <service
+            android:name=".ipc.aidl.AIDLService"
+            android:process=":aidlService" />
+
 
     </application>
 

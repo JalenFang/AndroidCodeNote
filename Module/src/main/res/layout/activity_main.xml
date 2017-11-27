@@ -37,7 +37,8 @@
 
             <Button
                 style="@style/main_button"
-                android:text="@string/scroll" />
+                android:text="@string/scroll"
+                android:visibility="gone" />
 
             <Button
                 style="@style/main_button"
@@ -46,15 +47,18 @@
 
             <Button
                 style="@style/main_button"
-                android:text="@string/crop_image" />
+                android:text="@string/crop_image"
+                android:visibility="gone" />
 
             <Button
                 style="@style/main_button"
-                android:text="@string/annotation" />
+                android:text="@string/annotation"
+                android:visibility="gone" />
 
             <Button
                 style="@style/main_button"
-                android:text="@string/bitmap" />
+                android:text="@string/bitmap"
+                android:visibility="gone" />
 
             <Button
                 style="@style/main_button"
@@ -69,7 +73,13 @@
             <Button
                 style="@style/main_button"
                 android:onClick="onClickView"
-                android:text="@string/view" />
+                android:text="@string/view"
+                android:visibility="gone" />
+
+            <Button
+                style="@style/main_button"
+                android:onClick="onClickInterProcessCommunication"
+                android:text="@string/ipc" />
 
             <Button
                 style="@style/main_button"

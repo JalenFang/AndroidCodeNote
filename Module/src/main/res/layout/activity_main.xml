@@ -83,6 +83,11 @@
 
             <Button
                 style="@style/main_button"
+                android:onClick="onClickThread"
+                android:text="@string/thread" />
+
+            <Button
+                style="@style/main_button"
                 android:onClick="onClickTest"
                 android:text="@string/test" />
 

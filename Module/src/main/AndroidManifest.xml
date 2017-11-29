@@ -269,6 +269,11 @@
             android:name=".ipc.aidl.AIDLService"
             android:process=":aidlService" />
 
+        <activity
+            android:name=".thread.handlerThread.HandlerThreadActivity"
+            android:label="@string/thread_handler_thread"
+            android:launchMode="standard" />
+
 
     </application>
 

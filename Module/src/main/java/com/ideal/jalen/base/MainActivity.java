@@ -24,6 +24,7 @@ import com.ideal.jalen.myactivity.MyActivity;
 import com.ideal.jalen.progress.activity.ProgressBarActivity;
 import com.ideal.jalen.splash.SplashActivity;
 import com.ideal.jalen.test.Test1Acitivity;
+import com.ideal.jalen.thread.handlerThread.HandlerThreadActivity;
 import com.ideal.jalen.utils.DialogUtil;
 import com.ideal.jalen.view.activity.ViewActivity;
 
@@ -102,7 +103,7 @@ public class MainActivity extends BaseActivity {
     }
 
     public void onClickInterProcessCommunication(View view) {
-        DialogUtil.getInstance().showDialog(MainActivity.this, getString(R.string.ipc), getActivity().getResources().getStringArray(R.array.ipc_type), new DialogUtil.ReturnClickPosition() {
+        DialogUtil.getInstance().showDialog(MainActivity.this, getString(R.string.ipc), getResources().getStringArray(R.array.ipc_type), new DialogUtil.ReturnClickPosition() {
             @Override
             public void clickPosition(int position) {
                 Toast.makeText(MainActivity.this, "" + position, Toast.LENGTH_SHORT).show();
@@ -137,11 +138,35 @@ public class MainActivity extends BaseActivity {
         });
     }
 
+    public void onClickThread(View view) {
+        DialogUtil.getInstance().showDialog(getActivity(), getString(R.string.thread),//
+                getResources().getStringArray(R.array.thread_type), new DialogUtil.ReturnClickPosition() {
+                    @Override
+                    public void clickPosition(int position) {
+                        switch (position) {
+                            case ThreadType.HANDLER_THREAD:
+                                startActivity(HandlerThreadActivity.class);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+        );
+    }
+
     public void onClickTest(View view) {
         startActivity(Test1Acitivity.class);
     }
 
     private void startActivity(Class<?> className) {
         startActivity(new Intent(getActivity(), className));
+    }
+
+    private static class ThreadType {
+        /**
+         * HandlerThread
+         */
+        public static final int HANDLER_THREAD = 0;
     }
 }

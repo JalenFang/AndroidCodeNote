@@ -13,6 +13,7 @@
     <string name="activity">Activity</string>
     <string name="view">View</string>
     <string name="ipc">进程间通信</string>
+    <string name="thread">线程的使用</string>
     <string name="schedule">Schedule</string>
     <string name="test">测试</string>
     <string name="test1">测试页面一</string>
@@ -128,6 +129,10 @@
         <item>SharedPreferences</item>
     </string-array>
 
+    <string-array name="thread_type">
+        <item>HandlerThread</item>
+    </string-array>
+
 
     <string-array name="title">
         <item>title1</item>
@@ -178,5 +183,9 @@
     <string name="canvas_three_order_bezier">三阶塞尔曲线</string>
     <string name="canvas_drawing_board">画板</string>
     <!--Canvas ↑-->
+
+    <!--thread ↓-->
+    <string name="thread_handler_thread">HandlerThread</string>
+    <!--thread ↑-->
 
 </resources>

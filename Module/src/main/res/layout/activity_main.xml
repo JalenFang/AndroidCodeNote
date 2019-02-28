@@ -88,6 +88,11 @@
 
             <Button
                 style="@style/main_button"
+                android:onClick="onClickBitmapCompress"
+                android:text="@string/bitmap_compress" />
+
+            <Button
+                style="@style/main_button"
                 android:onClick="onClickTest"
                 android:text="@string/test" />
 

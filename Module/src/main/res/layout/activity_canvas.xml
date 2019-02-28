@@ -16,4 +16,9 @@
         android:onClick="onClickBezier"
         android:text="@string/canvas_bezier" />
 
+    <Button
+        style="@style/main_button"
+        android:onClick="onClickPicSynthesis"
+        android:text="@string/canvas_pic_synthesis" />
+
 </LinearLayout>

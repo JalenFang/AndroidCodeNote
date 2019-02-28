@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.ideal.jalen.R;
 import com.ideal.jalen.animator.activity.AnimatorActivity;
 import com.ideal.jalen.attrsstyle.activity.AttrsStyleActivity;
+import com.ideal.jalen.bitmap.activity.BitmapActivity;
 import com.ideal.jalen.canvas.activity.CanvasActivity;
 import com.ideal.jalen.constant.IPCConstant;
 import com.ideal.jalen.entity.appstatus.AppStatusConstant;
@@ -100,6 +101,10 @@ public class MainActivity extends BaseActivity {
 
     public void onClickView(View view) {
         startActivity(ViewActivity.class);
+    }
+
+    public void onClickBitmapCompress(View view) {
+        startActivity(BitmapActivity.class);
     }
 
     public void onClickInterProcessCommunication(View view) {

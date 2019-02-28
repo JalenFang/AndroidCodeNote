@@ -190,6 +190,11 @@
             android:launchMode="standard" />
 
         <activity
+            android:name=".canvas.activity.CanvasPicSynthesisActivity"
+            android:label="@string/canvas_pic_synthesis"
+            android:launchMode="standard" />
+
+        <activity
             android:name=".canvas.activity.bezier.TwoOrderBezierBaseOperationActivity"
             android:label="@string/canvas_two_order_bezier_base_operation"
             android:launchMode="standard" />
@@ -272,6 +277,11 @@
         <activity
             android:name=".thread.handlerThread.HandlerThreadActivity"
             android:label="@string/thread_handler_thread"
+            android:launchMode="standard" />
+
+        <activity
+            android:name=".bitmap.activity.BitmapActivity"
+            android:label="@string/bitmap_compress"
             android:launchMode="standard" />
 
 

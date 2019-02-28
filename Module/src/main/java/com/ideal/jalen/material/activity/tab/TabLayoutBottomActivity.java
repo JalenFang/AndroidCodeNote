@@ -78,7 +78,7 @@ public class TabLayoutBottomActivity extends BaseActivity {
             TabLayout.Tab tabAt = tabLayout.getTabAt(i);
             if (tabAt != null) {
                 tabAt.setCustomView(R.layout.item_tab_layout_custom);
-                TextView itemTv = (TextView) tabAt.getCustomView().findViewById(R.id.tv_menu_item);
+                TextView itemTv = tabAt.getCustomView().findViewById(R.id.tv_menu_item);
                 itemTv.setText(cotentList.get(i));
             }
         }

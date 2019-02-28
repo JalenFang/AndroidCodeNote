@@ -39,6 +39,10 @@ public class CanvasActivity extends BaseActivity {
         startActivity(CanvasBaseOperationActivity.class);
     }
 
+    public void onClickPicSynthesis(View view) {
+        startActivity(CanvasPicSynthesisActivity.class);
+    }
+
     private void startActivity(Class<?> className) {
         startActivity(new Intent(getActivity(), className));
     }

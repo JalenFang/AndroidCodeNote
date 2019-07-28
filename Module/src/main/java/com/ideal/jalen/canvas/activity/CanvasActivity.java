@@ -43,6 +43,10 @@ public class CanvasActivity extends BaseActivity {
         startActivity(CanvasPicSynthesisActivity.class);
     }
 
+    public void onClickCircleScroll(View view) {
+        startActivity(CanvasCircleScrollActivity.class);
+    }
+
     private void startActivity(Class<?> className) {
         startActivity(new Intent(getActivity(), className));
     }

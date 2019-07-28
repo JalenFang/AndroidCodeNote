@@ -184,6 +184,7 @@
     <string name="canvas_three_order_bezier">三阶塞尔曲线</string>
     <string name="canvas_drawing_board">画板</string>
     <string name="canvas_pic_synthesis">图片合成</string>
+    <string name="canvas_circle_scroll">圆形滚动动效</string>
     <!--Canvas ↑-->
 
     <!--thread ↓-->

@@ -21,4 +21,9 @@
         android:onClick="onClickPicSynthesis"
         android:text="@string/canvas_pic_synthesis" />
 
+    <Button
+        style="@style/main_button"
+        android:onClick="onClickCircleScroll"
+        android:text="@string/canvas_circle_scroll" />
+
 </LinearLayout>
